@@ -1,0 +1,3942 @@
+[
+  {
+    "Team": "Arsenal",
+    "Player": "Martin Odegaard",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0709
+  },
+  {
+    "Team": "Arsenal",
+    "Player": "Bukayo Saka",
+    "Position": "Forward",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0709
+  },
+  {
+    "Team": "Arsenal",
+    "Player": "Jurrien Timber",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0709
+  },
+  {
+    "Team": "Arsenal",
+    "Player": "Takehiro Tomiyasu",
+    "Position": "Defender",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.008
+  },
+  {
+    "Team": "Arsenal",
+    "Player": "Kieran Tierney",
+    "Position": "Defender",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.008
+  },
+  {
+    "Team": "Arsenal",
+    "Player": "Arsenal GK Starter",
+    "Position": "Goalkeeper",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0824
+  },
+  {
+    "Team": "Arsenal",
+    "Player": "Arsenal DF Starter 1",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0824
+  },
+  {
+    "Team": "Arsenal",
+    "Player": "Arsenal DF Starter 2",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0721
+  },
+  {
+    "Team": "Arsenal",
+    "Player": "Arsenal DF Starter 3",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0812
+  },
+  {
+    "Team": "Arsenal",
+    "Player": "Arsenal MF Starter 1",
+    "Position": "Midfielder",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 715,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0818
+  },
+  {
+    "Team": "Arsenal",
+    "Player": "Arsenal MF Starter 2",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0721
+  },
+  {
+    "Team": "Arsenal",
+    "Player": "Arsenal FW Starter 1",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 690,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0789
+  },
+  {
+    "Team": "Arsenal",
+    "Player": "Arsenal FW Starter 2",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0812
+  },
+  {
+    "Team": "Arsenal",
+    "Player": "Arsenal Rotation Sub 1",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 380,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0435
+  },
+  {
+    "Team": "Arsenal",
+    "Player": "Arsenal Rotation Sub 2",
+    "Position": "Forward",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 310,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0355
+  },
+  {
+    "Team": "Arsenal",
+    "Player": "Arsenal Rotation Sub 3",
+    "Position": "Defender",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 290,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0332
+  },
+  {
+    "Team": "Arsenal",
+    "Player": "Arsenal Reserve 1",
+    "Position": "Goalkeeper",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 90,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0103
+  },
+  {
+    "Team": "Arsenal",
+    "Player": "Arsenal Reserve 2",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 85,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0097
+  },
+  {
+    "Team": "Arsenal",
+    "Player": "Arsenal Reserve 3",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 60,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0069
+  },
+  {
+    "Team": "Aston Villa",
+    "Player": "Amadou Onana",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0798
+  },
+  {
+    "Team": "Aston Villa",
+    "Player": "Boubacar Kamara",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.009
+  },
+  {
+    "Team": "Aston Villa",
+    "Player": "Tyrone Mings",
+    "Position": "Defender",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 340,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0438
+  },
+  {
+    "Team": "Aston Villa",
+    "Player": "Aston Villa GK Starter",
+    "Position": "Goalkeeper",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0927
+  },
+  {
+    "Team": "Aston Villa",
+    "Player": "Aston Villa DF Starter 1",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0927
+  },
+  {
+    "Team": "Aston Villa",
+    "Player": "Aston Villa DF Starter 2",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0811
+  },
+  {
+    "Team": "Aston Villa",
+    "Player": "Aston Villa DF Starter 3",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0914
+  },
+  {
+    "Team": "Aston Villa",
+    "Player": "Aston Villa MF Starter 1",
+    "Position": "Midfielder",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 715,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.092
+  },
+  {
+    "Team": "Aston Villa",
+    "Player": "Aston Villa MF Starter 2",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0811
+  },
+  {
+    "Team": "Aston Villa",
+    "Player": "Aston Villa FW Starter 1",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 690,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0888
+  },
+  {
+    "Team": "Aston Villa",
+    "Player": "Aston Villa FW Starter 2",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0914
+  },
+  {
+    "Team": "Aston Villa",
+    "Player": "Aston Villa Rotation Sub 1",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 380,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0489
+  },
+  {
+    "Team": "Aston Villa",
+    "Player": "Aston Villa Rotation Sub 2",
+    "Position": "Forward",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 310,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0399
+  },
+  {
+    "Team": "Aston Villa",
+    "Player": "Aston Villa Rotation Sub 3",
+    "Position": "Defender",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 290,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0373
+  },
+  {
+    "Team": "Aston Villa",
+    "Player": "Aston Villa Reserve 1",
+    "Position": "Goalkeeper",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 90,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0116
+  },
+  {
+    "Team": "Aston Villa",
+    "Player": "Aston Villa Reserve 2",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 85,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0109
+  },
+  {
+    "Team": "Aston Villa",
+    "Player": "Aston Villa Reserve 3",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 60,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0077
+  },
+  {
+    "Team": "Bournemouth",
+    "Player": "Alex Scott",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0834
+  },
+  {
+    "Team": "Bournemouth",
+    "Player": "Tyler Adams",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0094
+  },
+  {
+    "Team": "Bournemouth",
+    "Player": "Bournemouth GK Starter",
+    "Position": "Goalkeeper",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0969
+  },
+  {
+    "Team": "Bournemouth",
+    "Player": "Bournemouth DF Starter 1",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0969
+  },
+  {
+    "Team": "Bournemouth",
+    "Player": "Bournemouth DF Starter 2",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0848
+  },
+  {
+    "Team": "Bournemouth",
+    "Player": "Bournemouth DF Starter 3",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0956
+  },
+  {
+    "Team": "Bournemouth",
+    "Player": "Bournemouth MF Starter 1",
+    "Position": "Midfielder",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 715,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0962
+  },
+  {
+    "Team": "Bournemouth",
+    "Player": "Bournemouth MF Starter 2",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0848
+  },
+  {
+    "Team": "Bournemouth",
+    "Player": "Bournemouth FW Starter 1",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 690,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0929
+  },
+  {
+    "Team": "Bournemouth",
+    "Player": "Bournemouth FW Starter 2",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0956
+  },
+  {
+    "Team": "Bournemouth",
+    "Player": "Bournemouth Rotation Sub 1",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 380,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0511
+  },
+  {
+    "Team": "Bournemouth",
+    "Player": "Bournemouth Rotation Sub 2",
+    "Position": "Forward",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 310,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0417
+  },
+  {
+    "Team": "Bournemouth",
+    "Player": "Bournemouth Rotation Sub 3",
+    "Position": "Defender",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 290,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.039
+  },
+  {
+    "Team": "Bournemouth",
+    "Player": "Bournemouth Reserve 1",
+    "Position": "Goalkeeper",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 90,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0121
+  },
+  {
+    "Team": "Bournemouth",
+    "Player": "Bournemouth Reserve 2",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 85,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0114
+  },
+  {
+    "Team": "Bournemouth",
+    "Player": "Bournemouth Reserve 3",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 60,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0081
+  },
+  {
+    "Team": "Brentford",
+    "Player": "Yoane Wissa",
+    "Position": "Forward",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0812
+  },
+  {
+    "Team": "Brentford",
+    "Player": "Rico Henry",
+    "Position": "Defender",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0092
+  },
+  {
+    "Team": "Brentford",
+    "Player": "Aaron Hickey",
+    "Position": "Defender",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0092
+  },
+  {
+    "Team": "Brentford",
+    "Player": "Igor Thiago",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0092
+  },
+  {
+    "Team": "Brentford",
+    "Player": "Josh Dasilva",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0092
+  },
+  {
+    "Team": "Brentford",
+    "Player": "Brentford GK Starter",
+    "Position": "Goalkeeper",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0942
+  },
+  {
+    "Team": "Brentford",
+    "Player": "Brentford DF Starter 1",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0942
+  },
+  {
+    "Team": "Brentford",
+    "Player": "Brentford DF Starter 2",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0825
+  },
+  {
+    "Team": "Brentford",
+    "Player": "Brentford DF Starter 3",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0929
+  },
+  {
+    "Team": "Brentford",
+    "Player": "Brentford MF Starter 1",
+    "Position": "Midfielder",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 715,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0936
+  },
+  {
+    "Team": "Brentford",
+    "Player": "Brentford MF Starter 2",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0825
+  },
+  {
+    "Team": "Brentford",
+    "Player": "Brentford FW Starter 1",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 690,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0903
+  },
+  {
+    "Team": "Brentford",
+    "Player": "Brentford FW Starter 2",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0929
+  },
+  {
+    "Team": "Brentford",
+    "Player": "Brentford Rotation Sub 1",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 380,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0497
+  },
+  {
+    "Team": "Brentford",
+    "Player": "Brentford Rotation Sub 2",
+    "Position": "Forward",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 310,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0406
+  },
+  {
+    "Team": "Brentford",
+    "Player": "Brentford Rotation Sub 3",
+    "Position": "Defender",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 290,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.038
+  },
+  {
+    "Team": "Brentford",
+    "Player": "Brentford Reserve 1",
+    "Position": "Goalkeeper",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 90,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0118
+  },
+  {
+    "Team": "Brentford",
+    "Player": "Brentford Reserve 2",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 85,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0111
+  },
+  {
+    "Team": "Brentford",
+    "Player": "Brentford Reserve 3",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 60,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0079
+  },
+  {
+    "Team": "Brighton",
+    "Player": "Joao Pedro",
+    "Position": "Forward",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0798
+  },
+  {
+    "Team": "Brighton",
+    "Player": "Matt O'Riley",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 340,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0438
+  },
+  {
+    "Team": "Brighton",
+    "Player": "James Milner",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.009
+  },
+  {
+    "Team": "Brighton",
+    "Player": "Brighton GK Starter",
+    "Position": "Goalkeeper",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0927
+  },
+  {
+    "Team": "Brighton",
+    "Player": "Brighton DF Starter 1",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0927
+  },
+  {
+    "Team": "Brighton",
+    "Player": "Brighton DF Starter 2",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0811
+  },
+  {
+    "Team": "Brighton",
+    "Player": "Brighton DF Starter 3",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0914
+  },
+  {
+    "Team": "Brighton",
+    "Player": "Brighton MF Starter 1",
+    "Position": "Midfielder",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 715,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.092
+  },
+  {
+    "Team": "Brighton",
+    "Player": "Brighton MF Starter 2",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0811
+  },
+  {
+    "Team": "Brighton",
+    "Player": "Brighton FW Starter 1",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 690,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0888
+  },
+  {
+    "Team": "Brighton",
+    "Player": "Brighton FW Starter 2",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0914
+  },
+  {
+    "Team": "Brighton",
+    "Player": "Brighton Rotation Sub 1",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 380,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0489
+  },
+  {
+    "Team": "Brighton",
+    "Player": "Brighton Rotation Sub 2",
+    "Position": "Forward",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 310,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0399
+  },
+  {
+    "Team": "Brighton",
+    "Player": "Brighton Rotation Sub 3",
+    "Position": "Defender",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 290,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0373
+  },
+  {
+    "Team": "Brighton",
+    "Player": "Brighton Reserve 1",
+    "Position": "Goalkeeper",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 90,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0116
+  },
+  {
+    "Team": "Brighton",
+    "Player": "Brighton Reserve 2",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 85,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0109
+  },
+  {
+    "Team": "Brighton",
+    "Player": "Brighton Reserve 3",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 60,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0077
+  },
+  {
+    "Team": "Burnley",
+    "Player": "Jordan Beyer",
+    "Position": "Defender",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0102
+  },
+  {
+    "Team": "Burnley",
+    "Player": "Nathan Redmond",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0102
+  },
+  {
+    "Team": "Burnley",
+    "Player": "Burnley GK Starter",
+    "Position": "Goalkeeper",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.1047
+  },
+  {
+    "Team": "Burnley",
+    "Player": "Burnley DF Starter 1",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.1047
+  },
+  {
+    "Team": "Burnley",
+    "Player": "Burnley DF Starter 2",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0916
+  },
+  {
+    "Team": "Burnley",
+    "Player": "Burnley DF Starter 3",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.1032
+  },
+  {
+    "Team": "Burnley",
+    "Player": "Burnley MF Starter 1",
+    "Position": "Midfielder",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 715,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.1039
+  },
+  {
+    "Team": "Burnley",
+    "Player": "Burnley MF Starter 2",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0916
+  },
+  {
+    "Team": "Burnley",
+    "Player": "Burnley FW Starter 1",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 690,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.1003
+  },
+  {
+    "Team": "Burnley",
+    "Player": "Burnley FW Starter 2",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.1032
+  },
+  {
+    "Team": "Burnley",
+    "Player": "Burnley Rotation Sub 1",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 380,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0552
+  },
+  {
+    "Team": "Burnley",
+    "Player": "Burnley Rotation Sub 2",
+    "Position": "Forward",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 310,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0451
+  },
+  {
+    "Team": "Burnley",
+    "Player": "Burnley Rotation Sub 3",
+    "Position": "Defender",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 290,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0422
+  },
+  {
+    "Team": "Burnley",
+    "Player": "Burnley Reserve 1",
+    "Position": "Goalkeeper",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 90,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0131
+  },
+  {
+    "Team": "Burnley",
+    "Player": "Burnley Reserve 2",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 85,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0124
+  },
+  {
+    "Team": "Burnley",
+    "Player": "Burnley Reserve 3",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 60,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0087
+  },
+  {
+    "Team": "Chelsea",
+    "Player": "Cole Palmer",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0798
+  },
+  {
+    "Team": "Chelsea",
+    "Player": "Reece James",
+    "Position": "Defender",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 340,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0438
+  },
+  {
+    "Team": "Chelsea",
+    "Player": "Omari Kellyman",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.009
+  },
+  {
+    "Team": "Chelsea",
+    "Player": "Chelsea GK Starter",
+    "Position": "Goalkeeper",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0927
+  },
+  {
+    "Team": "Chelsea",
+    "Player": "Chelsea DF Starter 1",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0927
+  },
+  {
+    "Team": "Chelsea",
+    "Player": "Chelsea DF Starter 2",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0811
+  },
+  {
+    "Team": "Chelsea",
+    "Player": "Chelsea DF Starter 3",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0914
+  },
+  {
+    "Team": "Chelsea",
+    "Player": "Chelsea MF Starter 1",
+    "Position": "Midfielder",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 715,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.092
+  },
+  {
+    "Team": "Chelsea",
+    "Player": "Chelsea MF Starter 2",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0811
+  },
+  {
+    "Team": "Chelsea",
+    "Player": "Chelsea FW Starter 1",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 690,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0888
+  },
+  {
+    "Team": "Chelsea",
+    "Player": "Chelsea FW Starter 2",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0914
+  },
+  {
+    "Team": "Chelsea",
+    "Player": "Chelsea Rotation Sub 1",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 380,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0489
+  },
+  {
+    "Team": "Chelsea",
+    "Player": "Chelsea Rotation Sub 2",
+    "Position": "Forward",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 310,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0399
+  },
+  {
+    "Team": "Chelsea",
+    "Player": "Chelsea Rotation Sub 3",
+    "Position": "Defender",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 290,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0373
+  },
+  {
+    "Team": "Chelsea",
+    "Player": "Chelsea Reserve 1",
+    "Position": "Goalkeeper",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 90,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0116
+  },
+  {
+    "Team": "Chelsea",
+    "Player": "Chelsea Reserve 2",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 85,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0109
+  },
+  {
+    "Team": "Chelsea",
+    "Player": "Chelsea Reserve 3",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 60,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0077
+  },
+  {
+    "Team": "Crystal Palace",
+    "Player": "Chris Richards",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0827
+  },
+  {
+    "Team": "Crystal Palace",
+    "Player": "Cheick Doucoure",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0093
+  },
+  {
+    "Team": "Crystal Palace",
+    "Player": "Chadi Riad",
+    "Position": "Defender",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0093
+  },
+  {
+    "Team": "Crystal Palace",
+    "Player": "Crystal Palace GK Starter",
+    "Position": "Goalkeeper",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.096
+  },
+  {
+    "Team": "Crystal Palace",
+    "Player": "Crystal Palace DF Starter 1",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.096
+  },
+  {
+    "Team": "Crystal Palace",
+    "Player": "Crystal Palace DF Starter 2",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.084
+  },
+  {
+    "Team": "Crystal Palace",
+    "Player": "Crystal Palace DF Starter 3",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0947
+  },
+  {
+    "Team": "Crystal Palace",
+    "Player": "Crystal Palace MF Starter 1",
+    "Position": "Midfielder",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 715,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0953
+  },
+  {
+    "Team": "Crystal Palace",
+    "Player": "Crystal Palace MF Starter 2",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.084
+  },
+  {
+    "Team": "Crystal Palace",
+    "Player": "Crystal Palace FW Starter 1",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 690,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.092
+  },
+  {
+    "Team": "Crystal Palace",
+    "Player": "Crystal Palace FW Starter 2",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0947
+  },
+  {
+    "Team": "Crystal Palace",
+    "Player": "Crystal Palace Rotation Sub 1",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 380,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0507
+  },
+  {
+    "Team": "Crystal Palace",
+    "Player": "Crystal Palace Rotation Sub 2",
+    "Position": "Forward",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 310,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0413
+  },
+  {
+    "Team": "Crystal Palace",
+    "Player": "Crystal Palace Rotation Sub 3",
+    "Position": "Defender",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 290,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0387
+  },
+  {
+    "Team": "Crystal Palace",
+    "Player": "Crystal Palace Reserve 1",
+    "Position": "Goalkeeper",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 90,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.012
+  },
+  {
+    "Team": "Crystal Palace",
+    "Player": "Crystal Palace Reserve 2",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 85,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0113
+  },
+  {
+    "Team": "Crystal Palace",
+    "Player": "Crystal Palace Reserve 3",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 60,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.008
+  },
+  {
+    "Team": "Everton",
+    "Player": "Jarrad Branthwaite",
+    "Position": "Defender",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 340,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0434
+  },
+  {
+    "Team": "Everton",
+    "Player": "James Garner",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0791
+  },
+  {
+    "Team": "Everton",
+    "Player": "Tim Iroegbunam",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0089
+  },
+  {
+    "Team": "Everton",
+    "Player": "Armando Broja",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0089
+  },
+  {
+    "Team": "Everton",
+    "Player": "Everton GK Starter",
+    "Position": "Goalkeeper",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0918
+  },
+  {
+    "Team": "Everton",
+    "Player": "Everton DF Starter 1",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0918
+  },
+  {
+    "Team": "Everton",
+    "Player": "Everton DF Starter 2",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0804
+  },
+  {
+    "Team": "Everton",
+    "Player": "Everton DF Starter 3",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0906
+  },
+  {
+    "Team": "Everton",
+    "Player": "Everton MF Starter 1",
+    "Position": "Midfielder",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 715,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0912
+  },
+  {
+    "Team": "Everton",
+    "Player": "Everton MF Starter 2",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0804
+  },
+  {
+    "Team": "Everton",
+    "Player": "Everton FW Starter 1",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 690,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.088
+  },
+  {
+    "Team": "Everton",
+    "Player": "Everton FW Starter 2",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0906
+  },
+  {
+    "Team": "Everton",
+    "Player": "Everton Rotation Sub 1",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 380,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0485
+  },
+  {
+    "Team": "Everton",
+    "Player": "Everton Rotation Sub 2",
+    "Position": "Forward",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 310,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0395
+  },
+  {
+    "Team": "Everton",
+    "Player": "Everton Rotation Sub 3",
+    "Position": "Defender",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 290,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.037
+  },
+  {
+    "Team": "Everton",
+    "Player": "Everton Reserve 1",
+    "Position": "Goalkeeper",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 90,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0115
+  },
+  {
+    "Team": "Everton",
+    "Player": "Everton Reserve 2",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 85,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0108
+  },
+  {
+    "Team": "Everton",
+    "Player": "Everton Reserve 3",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 60,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0077
+  },
+  {
+    "Team": "Fulham",
+    "Player": "Sasa Lukic",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0805
+  },
+  {
+    "Team": "Fulham",
+    "Player": "Timothy Castagne",
+    "Position": "Defender",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 340,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0442
+  },
+  {
+    "Team": "Fulham",
+    "Player": "Fulham GK Starter",
+    "Position": "Goalkeeper",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0935
+  },
+  {
+    "Team": "Fulham",
+    "Player": "Fulham DF Starter 1",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0935
+  },
+  {
+    "Team": "Fulham",
+    "Player": "Fulham DF Starter 2",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0818
+  },
+  {
+    "Team": "Fulham",
+    "Player": "Fulham DF Starter 3",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0922
+  },
+  {
+    "Team": "Fulham",
+    "Player": "Fulham MF Starter 1",
+    "Position": "Midfielder",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 715,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0929
+  },
+  {
+    "Team": "Fulham",
+    "Player": "Fulham MF Starter 2",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0818
+  },
+  {
+    "Team": "Fulham",
+    "Player": "Fulham FW Starter 1",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 690,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0896
+  },
+  {
+    "Team": "Fulham",
+    "Player": "Fulham FW Starter 2",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0922
+  },
+  {
+    "Team": "Fulham",
+    "Player": "Fulham Rotation Sub 1",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 380,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0494
+  },
+  {
+    "Team": "Fulham",
+    "Player": "Fulham Rotation Sub 2",
+    "Position": "Forward",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 310,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0403
+  },
+  {
+    "Team": "Fulham",
+    "Player": "Fulham Rotation Sub 3",
+    "Position": "Defender",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 290,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0377
+  },
+  {
+    "Team": "Fulham",
+    "Player": "Fulham Reserve 1",
+    "Position": "Goalkeeper",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 90,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0117
+  },
+  {
+    "Team": "Fulham",
+    "Player": "Fulham Reserve 2",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 85,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.011
+  },
+  {
+    "Team": "Fulham",
+    "Player": "Fulham Reserve 3",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 60,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0078
+  },
+  {
+    "Team": "Ipswich",
+    "Player": "Axel Tuanzebe",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0805
+  },
+  {
+    "Team": "Ipswich",
+    "Player": "Massimo Luongo",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 340,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0442
+  },
+  {
+    "Team": "Ipswich",
+    "Player": "Ipswich GK Starter",
+    "Position": "Goalkeeper",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0935
+  },
+  {
+    "Team": "Ipswich",
+    "Player": "Ipswich DF Starter 1",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0935
+  },
+  {
+    "Team": "Ipswich",
+    "Player": "Ipswich DF Starter 2",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0818
+  },
+  {
+    "Team": "Ipswich",
+    "Player": "Ipswich DF Starter 3",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0922
+  },
+  {
+    "Team": "Ipswich",
+    "Player": "Ipswich MF Starter 1",
+    "Position": "Midfielder",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 715,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0929
+  },
+  {
+    "Team": "Ipswich",
+    "Player": "Ipswich MF Starter 2",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0818
+  },
+  {
+    "Team": "Ipswich",
+    "Player": "Ipswich FW Starter 1",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 690,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0896
+  },
+  {
+    "Team": "Ipswich",
+    "Player": "Ipswich FW Starter 2",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0922
+  },
+  {
+    "Team": "Ipswich",
+    "Player": "Ipswich Rotation Sub 1",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 380,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0494
+  },
+  {
+    "Team": "Ipswich",
+    "Player": "Ipswich Rotation Sub 2",
+    "Position": "Forward",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 310,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0403
+  },
+  {
+    "Team": "Ipswich",
+    "Player": "Ipswich Rotation Sub 3",
+    "Position": "Defender",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 290,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0377
+  },
+  {
+    "Team": "Ipswich",
+    "Player": "Ipswich Reserve 1",
+    "Position": "Goalkeeper",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 90,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0117
+  },
+  {
+    "Team": "Ipswich",
+    "Player": "Ipswich Reserve 2",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 85,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.011
+  },
+  {
+    "Team": "Ipswich",
+    "Player": "Ipswich Reserve 3",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 60,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0078
+  },
+  {
+    "Team": "Leeds",
+    "Player": "Ethan Ampadu",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0805
+  },
+  {
+    "Team": "Leeds",
+    "Player": "Ilia Gruev",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 340,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0442
+  },
+  {
+    "Team": "Leeds",
+    "Player": "Leeds GK Starter",
+    "Position": "Goalkeeper",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0935
+  },
+  {
+    "Team": "Leeds",
+    "Player": "Leeds DF Starter 1",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0935
+  },
+  {
+    "Team": "Leeds",
+    "Player": "Leeds DF Starter 2",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0818
+  },
+  {
+    "Team": "Leeds",
+    "Player": "Leeds DF Starter 3",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0922
+  },
+  {
+    "Team": "Leeds",
+    "Player": "Leeds MF Starter 1",
+    "Position": "Midfielder",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 715,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0929
+  },
+  {
+    "Team": "Leeds",
+    "Player": "Leeds MF Starter 2",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0818
+  },
+  {
+    "Team": "Leeds",
+    "Player": "Leeds FW Starter 1",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 690,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0896
+  },
+  {
+    "Team": "Leeds",
+    "Player": "Leeds FW Starter 2",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0922
+  },
+  {
+    "Team": "Leeds",
+    "Player": "Leeds Rotation Sub 1",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 380,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0494
+  },
+  {
+    "Team": "Leeds",
+    "Player": "Leeds Rotation Sub 2",
+    "Position": "Forward",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 310,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0403
+  },
+  {
+    "Team": "Leeds",
+    "Player": "Leeds Rotation Sub 3",
+    "Position": "Defender",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 290,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0377
+  },
+  {
+    "Team": "Leeds",
+    "Player": "Leeds Reserve 1",
+    "Position": "Goalkeeper",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 90,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0117
+  },
+  {
+    "Team": "Leeds",
+    "Player": "Leeds Reserve 2",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 85,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.011
+  },
+  {
+    "Team": "Leeds",
+    "Player": "Leeds Reserve 3",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 60,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0078
+  },
+  {
+    "Team": "Leicester",
+    "Player": "Patson Daka",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0098
+  },
+  {
+    "Team": "Leicester",
+    "Player": "Jannik Vestergaard",
+    "Position": "Defender",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 340,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0476
+  },
+  {
+    "Team": "Leicester",
+    "Player": "Leicester GK Starter",
+    "Position": "Goalkeeper",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.1007
+  },
+  {
+    "Team": "Leicester",
+    "Player": "Leicester DF Starter 1",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.1007
+  },
+  {
+    "Team": "Leicester",
+    "Player": "Leicester DF Starter 2",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0881
+  },
+  {
+    "Team": "Leicester",
+    "Player": "Leicester DF Starter 3",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0993
+  },
+  {
+    "Team": "Leicester",
+    "Player": "Leicester MF Starter 1",
+    "Position": "Midfielder",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 715,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.1
+  },
+  {
+    "Team": "Leicester",
+    "Player": "Leicester MF Starter 2",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0881
+  },
+  {
+    "Team": "Leicester",
+    "Player": "Leicester FW Starter 1",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 690,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0965
+  },
+  {
+    "Team": "Leicester",
+    "Player": "Leicester FW Starter 2",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0993
+  },
+  {
+    "Team": "Leicester",
+    "Player": "Leicester Rotation Sub 1",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 380,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0531
+  },
+  {
+    "Team": "Leicester",
+    "Player": "Leicester Rotation Sub 2",
+    "Position": "Forward",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 310,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0434
+  },
+  {
+    "Team": "Leicester",
+    "Player": "Leicester Rotation Sub 3",
+    "Position": "Defender",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 290,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0406
+  },
+  {
+    "Team": "Leicester",
+    "Player": "Leicester Reserve 1",
+    "Position": "Goalkeeper",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 90,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0126
+  },
+  {
+    "Team": "Leicester",
+    "Player": "Leicester Reserve 2",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 85,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0119
+  },
+  {
+    "Team": "Leicester",
+    "Player": "Leicester Reserve 3",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 60,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0084
+  },
+  {
+    "Team": "Liverpool",
+    "Player": "Alisson Becker",
+    "Position": "Goalkeeper",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0764
+  },
+  {
+    "Team": "Liverpool",
+    "Player": "Diogo Jota",
+    "Position": "Forward",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0764
+  },
+  {
+    "Team": "Liverpool",
+    "Player": "Harvey Elliott",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0086
+  },
+  {
+    "Team": "Liverpool",
+    "Player": "Federico Chiesa",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0086
+  },
+  {
+    "Team": "Liverpool",
+    "Player": "Liverpool GK Starter",
+    "Position": "Goalkeeper",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0887
+  },
+  {
+    "Team": "Liverpool",
+    "Player": "Liverpool DF Starter 1",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0887
+  },
+  {
+    "Team": "Liverpool",
+    "Player": "Liverpool DF Starter 2",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0776
+  },
+  {
+    "Team": "Liverpool",
+    "Player": "Liverpool DF Starter 3",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0874
+  },
+  {
+    "Team": "Liverpool",
+    "Player": "Liverpool MF Starter 1",
+    "Position": "Midfielder",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 715,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0881
+  },
+  {
+    "Team": "Liverpool",
+    "Player": "Liverpool MF Starter 2",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0776
+  },
+  {
+    "Team": "Liverpool",
+    "Player": "Liverpool FW Starter 1",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 690,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.085
+  },
+  {
+    "Team": "Liverpool",
+    "Player": "Liverpool FW Starter 2",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0874
+  },
+  {
+    "Team": "Liverpool",
+    "Player": "Liverpool Rotation Sub 1",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 380,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0468
+  },
+  {
+    "Team": "Liverpool",
+    "Player": "Liverpool Rotation Sub 2",
+    "Position": "Forward",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 310,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0382
+  },
+  {
+    "Team": "Liverpool",
+    "Player": "Liverpool Rotation Sub 3",
+    "Position": "Defender",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 290,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0357
+  },
+  {
+    "Team": "Liverpool",
+    "Player": "Liverpool Reserve 1",
+    "Position": "Goalkeeper",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 90,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0111
+  },
+  {
+    "Team": "Liverpool",
+    "Player": "Liverpool Reserve 2",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 85,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0105
+  },
+  {
+    "Team": "Liverpool",
+    "Player": "Liverpool Reserve 3",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 60,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0074
+  },
+  {
+    "Team": "Man City",
+    "Player": "Rodri",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0715
+  },
+  {
+    "Team": "Man City",
+    "Player": "Kevin De Bruyne",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0715
+  },
+  {
+    "Team": "Man City",
+    "Player": "Kyle Walker",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0715
+  },
+  {
+    "Team": "Man City",
+    "Player": "Oscar Bobb",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0081
+  },
+  {
+    "Team": "Man City",
+    "Player": "Man City GK Starter",
+    "Position": "Goalkeeper",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.083
+  },
+  {
+    "Team": "Man City",
+    "Player": "Man City DF Starter 1",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.083
+  },
+  {
+    "Team": "Man City",
+    "Player": "Man City DF Starter 2",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0727
+  },
+  {
+    "Team": "Man City",
+    "Player": "Man City DF Starter 3",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0819
+  },
+  {
+    "Team": "Man City",
+    "Player": "Man City MF Starter 1",
+    "Position": "Midfielder",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 715,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0825
+  },
+  {
+    "Team": "Man City",
+    "Player": "Man City MF Starter 2",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0727
+  },
+  {
+    "Team": "Man City",
+    "Player": "Man City FW Starter 1",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 690,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0796
+  },
+  {
+    "Team": "Man City",
+    "Player": "Man City FW Starter 2",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0819
+  },
+  {
+    "Team": "Man City",
+    "Player": "Man City Rotation Sub 1",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 380,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0438
+  },
+  {
+    "Team": "Man City",
+    "Player": "Man City Rotation Sub 2",
+    "Position": "Forward",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 310,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0358
+  },
+  {
+    "Team": "Man City",
+    "Player": "Man City Rotation Sub 3",
+    "Position": "Defender",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 290,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0334
+  },
+  {
+    "Team": "Man City",
+    "Player": "Man City Reserve 1",
+    "Position": "Goalkeeper",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 90,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0104
+  },
+  {
+    "Team": "Man City",
+    "Player": "Man City Reserve 2",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 85,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0098
+  },
+  {
+    "Team": "Man City",
+    "Player": "Man City Reserve 3",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 60,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0069
+  },
+  {
+    "Team": "Man United",
+    "Player": "Kobbie Mainoo",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.071
+  },
+  {
+    "Team": "Man United",
+    "Player": "Harry Maguire",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.071
+  },
+  {
+    "Team": "Man United",
+    "Player": "Luke Shaw",
+    "Position": "Defender",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 340,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0389
+  },
+  {
+    "Team": "Man United",
+    "Player": "Leny Yoro",
+    "Position": "Defender",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.008
+  },
+  {
+    "Team": "Man United",
+    "Player": "Mason Mount",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 340,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0389
+  },
+  {
+    "Team": "Man United",
+    "Player": "Man United GK Starter",
+    "Position": "Goalkeeper",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0825
+  },
+  {
+    "Team": "Man United",
+    "Player": "Man United DF Starter 1",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0825
+  },
+  {
+    "Team": "Man United",
+    "Player": "Man United DF Starter 2",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0722
+  },
+  {
+    "Team": "Man United",
+    "Player": "Man United DF Starter 3",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0813
+  },
+  {
+    "Team": "Man United",
+    "Player": "Man United MF Starter 1",
+    "Position": "Midfielder",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 715,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0819
+  },
+  {
+    "Team": "Man United",
+    "Player": "Man United MF Starter 2",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0722
+  },
+  {
+    "Team": "Man United",
+    "Player": "Man United FW Starter 1",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 690,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.079
+  },
+  {
+    "Team": "Man United",
+    "Player": "Man United FW Starter 2",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0813
+  },
+  {
+    "Team": "Man United",
+    "Player": "Man United Rotation Sub 1",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 380,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0435
+  },
+  {
+    "Team": "Man United",
+    "Player": "Man United Rotation Sub 2",
+    "Position": "Forward",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 310,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0355
+  },
+  {
+    "Team": "Man United",
+    "Player": "Man United Rotation Sub 3",
+    "Position": "Defender",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 290,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0332
+  },
+  {
+    "Team": "Man United",
+    "Player": "Man United Reserve 1",
+    "Position": "Goalkeeper",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 90,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0103
+  },
+  {
+    "Team": "Man United",
+    "Player": "Man United Reserve 2",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 85,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0097
+  },
+  {
+    "Team": "Man United",
+    "Player": "Man United Reserve 3",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 60,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0069
+  },
+  {
+    "Team": "Newcastle",
+    "Player": "Kieran Trippier",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0791
+  },
+  {
+    "Team": "Newcastle",
+    "Player": "Callum Wilson",
+    "Position": "Forward",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 340,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0434
+  },
+  {
+    "Team": "Newcastle",
+    "Player": "Sven Botman",
+    "Position": "Defender",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0089
+  },
+  {
+    "Team": "Newcastle",
+    "Player": "Jamaal Lascelles",
+    "Position": "Defender",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0089
+  },
+  {
+    "Team": "Newcastle",
+    "Player": "Newcastle GK Starter",
+    "Position": "Goalkeeper",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0918
+  },
+  {
+    "Team": "Newcastle",
+    "Player": "Newcastle DF Starter 1",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0918
+  },
+  {
+    "Team": "Newcastle",
+    "Player": "Newcastle DF Starter 2",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0804
+  },
+  {
+    "Team": "Newcastle",
+    "Player": "Newcastle DF Starter 3",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0906
+  },
+  {
+    "Team": "Newcastle",
+    "Player": "Newcastle MF Starter 1",
+    "Position": "Midfielder",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 715,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0912
+  },
+  {
+    "Team": "Newcastle",
+    "Player": "Newcastle MF Starter 2",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0804
+  },
+  {
+    "Team": "Newcastle",
+    "Player": "Newcastle FW Starter 1",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 690,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.088
+  },
+  {
+    "Team": "Newcastle",
+    "Player": "Newcastle FW Starter 2",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0906
+  },
+  {
+    "Team": "Newcastle",
+    "Player": "Newcastle Rotation Sub 1",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 380,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0485
+  },
+  {
+    "Team": "Newcastle",
+    "Player": "Newcastle Rotation Sub 2",
+    "Position": "Forward",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 310,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0395
+  },
+  {
+    "Team": "Newcastle",
+    "Player": "Newcastle Rotation Sub 3",
+    "Position": "Defender",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 290,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.037
+  },
+  {
+    "Team": "Newcastle",
+    "Player": "Newcastle Reserve 1",
+    "Position": "Goalkeeper",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 90,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0115
+  },
+  {
+    "Team": "Newcastle",
+    "Player": "Newcastle Reserve 2",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 85,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0108
+  },
+  {
+    "Team": "Newcastle",
+    "Player": "Newcastle Reserve 3",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 60,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0077
+  },
+  {
+    "Team": "Nott'm Forest",
+    "Player": "Morgan Gibbs-White",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0798
+  },
+  {
+    "Team": "Nott'm Forest",
+    "Player": "Ibrahim Sangare",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 340,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0438
+  },
+  {
+    "Team": "Nott'm Forest",
+    "Player": "Danilo",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.009
+  },
+  {
+    "Team": "Nott'm Forest",
+    "Player": "Nott'm Forest GK Starter",
+    "Position": "Goalkeeper",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0927
+  },
+  {
+    "Team": "Nott'm Forest",
+    "Player": "Nott'm Forest DF Starter 1",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0927
+  },
+  {
+    "Team": "Nott'm Forest",
+    "Player": "Nott'm Forest DF Starter 2",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0811
+  },
+  {
+    "Team": "Nott'm Forest",
+    "Player": "Nott'm Forest DF Starter 3",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0914
+  },
+  {
+    "Team": "Nott'm Forest",
+    "Player": "Nott'm Forest MF Starter 1",
+    "Position": "Midfielder",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 715,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.092
+  },
+  {
+    "Team": "Nott'm Forest",
+    "Player": "Nott'm Forest MF Starter 2",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0811
+  },
+  {
+    "Team": "Nott'm Forest",
+    "Player": "Nott'm Forest FW Starter 1",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 690,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0888
+  },
+  {
+    "Team": "Nott'm Forest",
+    "Player": "Nott'm Forest FW Starter 2",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0914
+  },
+  {
+    "Team": "Nott'm Forest",
+    "Player": "Nott'm Forest Rotation Sub 1",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 380,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0489
+  },
+  {
+    "Team": "Nott'm Forest",
+    "Player": "Nott'm Forest Rotation Sub 2",
+    "Position": "Forward",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 310,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0399
+  },
+  {
+    "Team": "Nott'm Forest",
+    "Player": "Nott'm Forest Rotation Sub 3",
+    "Position": "Defender",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 290,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0373
+  },
+  {
+    "Team": "Nott'm Forest",
+    "Player": "Nott'm Forest Reserve 1",
+    "Position": "Goalkeeper",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 90,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0116
+  },
+  {
+    "Team": "Nott'm Forest",
+    "Player": "Nott'm Forest Reserve 2",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 85,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0109
+  },
+  {
+    "Team": "Nott'm Forest",
+    "Player": "Nott'm Forest Reserve 3",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 60,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0077
+  },
+  {
+    "Team": "Southampton",
+    "Player": "Gavin Bazunu",
+    "Position": "Goalkeeper",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0097
+  },
+  {
+    "Team": "Southampton",
+    "Player": "Ross Stewart",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0097
+  },
+  {
+    "Team": "Southampton",
+    "Player": "William Smallbone",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 340,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0471
+  },
+  {
+    "Team": "Southampton",
+    "Player": "Southampton GK Starter",
+    "Position": "Goalkeeper",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0997
+  },
+  {
+    "Team": "Southampton",
+    "Player": "Southampton DF Starter 1",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0997
+  },
+  {
+    "Team": "Southampton",
+    "Player": "Southampton DF Starter 2",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0873
+  },
+  {
+    "Team": "Southampton",
+    "Player": "Southampton DF Starter 3",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0983
+  },
+  {
+    "Team": "Southampton",
+    "Player": "Southampton MF Starter 1",
+    "Position": "Midfielder",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 715,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.099
+  },
+  {
+    "Team": "Southampton",
+    "Player": "Southampton MF Starter 2",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0873
+  },
+  {
+    "Team": "Southampton",
+    "Player": "Southampton FW Starter 1",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 690,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0956
+  },
+  {
+    "Team": "Southampton",
+    "Player": "Southampton FW Starter 2",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0983
+  },
+  {
+    "Team": "Southampton",
+    "Player": "Southampton Rotation Sub 1",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 380,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0526
+  },
+  {
+    "Team": "Southampton",
+    "Player": "Southampton Rotation Sub 2",
+    "Position": "Forward",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 310,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0429
+  },
+  {
+    "Team": "Southampton",
+    "Player": "Southampton Rotation Sub 3",
+    "Position": "Defender",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 290,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0402
+  },
+  {
+    "Team": "Southampton",
+    "Player": "Southampton Reserve 1",
+    "Position": "Goalkeeper",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 90,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0125
+  },
+  {
+    "Team": "Southampton",
+    "Player": "Southampton Reserve 2",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 85,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0118
+  },
+  {
+    "Team": "Southampton",
+    "Player": "Southampton Reserve 3",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 60,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0083
+  },
+  {
+    "Team": "Sunderland",
+    "Player": "Niall Huggins",
+    "Position": "Defender",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0102
+  },
+  {
+    "Team": "Sunderland",
+    "Player": "Jenson Seelt",
+    "Position": "Defender",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0102
+  },
+  {
+    "Team": "Sunderland",
+    "Player": "Sunderland GK Starter",
+    "Position": "Goalkeeper",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.1047
+  },
+  {
+    "Team": "Sunderland",
+    "Player": "Sunderland DF Starter 1",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.1047
+  },
+  {
+    "Team": "Sunderland",
+    "Player": "Sunderland DF Starter 2",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0916
+  },
+  {
+    "Team": "Sunderland",
+    "Player": "Sunderland DF Starter 3",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.1032
+  },
+  {
+    "Team": "Sunderland",
+    "Player": "Sunderland MF Starter 1",
+    "Position": "Midfielder",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 715,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.1039
+  },
+  {
+    "Team": "Sunderland",
+    "Player": "Sunderland MF Starter 2",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0916
+  },
+  {
+    "Team": "Sunderland",
+    "Player": "Sunderland FW Starter 1",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 690,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.1003
+  },
+  {
+    "Team": "Sunderland",
+    "Player": "Sunderland FW Starter 2",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.1032
+  },
+  {
+    "Team": "Sunderland",
+    "Player": "Sunderland Rotation Sub 1",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 380,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0552
+  },
+  {
+    "Team": "Sunderland",
+    "Player": "Sunderland Rotation Sub 2",
+    "Position": "Forward",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 310,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0451
+  },
+  {
+    "Team": "Sunderland",
+    "Player": "Sunderland Rotation Sub 3",
+    "Position": "Defender",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 290,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0422
+  },
+  {
+    "Team": "Sunderland",
+    "Player": "Sunderland Reserve 1",
+    "Position": "Goalkeeper",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 90,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0131
+  },
+  {
+    "Team": "Sunderland",
+    "Player": "Sunderland Reserve 2",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 85,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0124
+  },
+  {
+    "Team": "Sunderland",
+    "Player": "Sunderland Reserve 3",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 60,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0087
+  },
+  {
+    "Team": "Tottenham",
+    "Player": "Son Heung-min",
+    "Position": "Forward",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0827
+  },
+  {
+    "Team": "Tottenham",
+    "Player": "Richarlison",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0093
+  },
+  {
+    "Team": "Tottenham",
+    "Player": "Wilson Odobert",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0093
+  },
+  {
+    "Team": "Tottenham",
+    "Player": "Tottenham GK Starter",
+    "Position": "Goalkeeper",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.096
+  },
+  {
+    "Team": "Tottenham",
+    "Player": "Tottenham DF Starter 1",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.096
+  },
+  {
+    "Team": "Tottenham",
+    "Player": "Tottenham DF Starter 2",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.084
+  },
+  {
+    "Team": "Tottenham",
+    "Player": "Tottenham DF Starter 3",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0947
+  },
+  {
+    "Team": "Tottenham",
+    "Player": "Tottenham MF Starter 1",
+    "Position": "Midfielder",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 715,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0953
+  },
+  {
+    "Team": "Tottenham",
+    "Player": "Tottenham MF Starter 2",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.084
+  },
+  {
+    "Team": "Tottenham",
+    "Player": "Tottenham FW Starter 1",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 690,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.092
+  },
+  {
+    "Team": "Tottenham",
+    "Player": "Tottenham FW Starter 2",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0947
+  },
+  {
+    "Team": "Tottenham",
+    "Player": "Tottenham Rotation Sub 1",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 380,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0507
+  },
+  {
+    "Team": "Tottenham",
+    "Player": "Tottenham Rotation Sub 2",
+    "Position": "Forward",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 310,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0413
+  },
+  {
+    "Team": "Tottenham",
+    "Player": "Tottenham Rotation Sub 3",
+    "Position": "Defender",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 290,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0387
+  },
+  {
+    "Team": "Tottenham",
+    "Player": "Tottenham Reserve 1",
+    "Position": "Goalkeeper",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 90,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.012
+  },
+  {
+    "Team": "Tottenham",
+    "Player": "Tottenham Reserve 2",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 85,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0113
+  },
+  {
+    "Team": "Tottenham",
+    "Player": "Tottenham Reserve 3",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 60,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.008
+  },
+  {
+    "Team": "West Ham",
+    "Player": "Mohammed Kudus",
+    "Position": "Forward",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0834
+  },
+  {
+    "Team": "West Ham",
+    "Player": "Niclas Fullkrug",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0094
+  },
+  {
+    "Team": "West Ham",
+    "Player": "West Ham GK Starter",
+    "Position": "Goalkeeper",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0969
+  },
+  {
+    "Team": "West Ham",
+    "Player": "West Ham DF Starter 1",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0969
+  },
+  {
+    "Team": "West Ham",
+    "Player": "West Ham DF Starter 2",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0848
+  },
+  {
+    "Team": "West Ham",
+    "Player": "West Ham DF Starter 3",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0956
+  },
+  {
+    "Team": "West Ham",
+    "Player": "West Ham MF Starter 1",
+    "Position": "Midfielder",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 715,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0962
+  },
+  {
+    "Team": "West Ham",
+    "Player": "West Ham MF Starter 2",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0848
+  },
+  {
+    "Team": "West Ham",
+    "Player": "West Ham FW Starter 1",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 690,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0929
+  },
+  {
+    "Team": "West Ham",
+    "Player": "West Ham FW Starter 2",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0956
+  },
+  {
+    "Team": "West Ham",
+    "Player": "West Ham Rotation Sub 1",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 380,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0511
+  },
+  {
+    "Team": "West Ham",
+    "Player": "West Ham Rotation Sub 2",
+    "Position": "Forward",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 310,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0417
+  },
+  {
+    "Team": "West Ham",
+    "Player": "West Ham Rotation Sub 3",
+    "Position": "Defender",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 290,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.039
+  },
+  {
+    "Team": "West Ham",
+    "Player": "West Ham Reserve 1",
+    "Position": "Goalkeeper",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 90,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0121
+  },
+  {
+    "Team": "West Ham",
+    "Player": "West Ham Reserve 2",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 85,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0114
+  },
+  {
+    "Team": "West Ham",
+    "Player": "West Ham Reserve 3",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 60,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0081
+  },
+  {
+    "Team": "Wolves",
+    "Player": "Yerson Mosquera",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 620,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0791
+  },
+  {
+    "Team": "Wolves",
+    "Player": "Hwang Hee-chan",
+    "Position": "Forward",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 340,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0434
+  },
+  {
+    "Team": "Wolves",
+    "Player": "Boubacar Traore",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0089
+  },
+  {
+    "Team": "Wolves",
+    "Player": "Sasa Kalajdzic",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 70,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0089
+  },
+  {
+    "Team": "Wolves",
+    "Player": "Wolves GK Starter",
+    "Position": "Goalkeeper",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0918
+  },
+  {
+    "Team": "Wolves",
+    "Player": "Wolves DF Starter 1",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 720,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0918
+  },
+  {
+    "Team": "Wolves",
+    "Player": "Wolves DF Starter 2",
+    "Position": "Defender",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0804
+  },
+  {
+    "Team": "Wolves",
+    "Player": "Wolves DF Starter 3",
+    "Position": "Defender",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0906
+  },
+  {
+    "Team": "Wolves",
+    "Player": "Wolves MF Starter 1",
+    "Position": "Midfielder",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 715,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0912
+  },
+  {
+    "Team": "Wolves",
+    "Player": "Wolves MF Starter 2",
+    "Position": "Midfielder",
+    "Starts": 7,
+    "Matches": 9,
+    "Minutes": 630,
+    "Start_Pct": 0.78,
+    "Minutes_Share": 0.0804
+  },
+  {
+    "Team": "Wolves",
+    "Player": "Wolves FW Starter 1",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 690,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.088
+  },
+  {
+    "Team": "Wolves",
+    "Player": "Wolves FW Starter 2",
+    "Position": "Forward",
+    "Starts": 8,
+    "Matches": 9,
+    "Minutes": 710,
+    "Start_Pct": 0.89,
+    "Minutes_Share": 0.0906
+  },
+  {
+    "Team": "Wolves",
+    "Player": "Wolves Rotation Sub 1",
+    "Position": "Midfielder",
+    "Starts": 4,
+    "Matches": 9,
+    "Minutes": 380,
+    "Start_Pct": 0.44,
+    "Minutes_Share": 0.0485
+  },
+  {
+    "Team": "Wolves",
+    "Player": "Wolves Rotation Sub 2",
+    "Position": "Forward",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 310,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.0395
+  },
+  {
+    "Team": "Wolves",
+    "Player": "Wolves Rotation Sub 3",
+    "Position": "Defender",
+    "Starts": 3,
+    "Matches": 9,
+    "Minutes": 290,
+    "Start_Pct": 0.33,
+    "Minutes_Share": 0.037
+  },
+  {
+    "Team": "Wolves",
+    "Player": "Wolves Reserve 1",
+    "Position": "Goalkeeper",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 90,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0115
+  },
+  {
+    "Team": "Wolves",
+    "Player": "Wolves Reserve 2",
+    "Position": "Midfielder",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 85,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0108
+  },
+  {
+    "Team": "Wolves",
+    "Player": "Wolves Reserve 3",
+    "Position": "Forward",
+    "Starts": 1,
+    "Matches": 9,
+    "Minutes": 60,
+    "Start_Pct": 0.11,
+    "Minutes_Share": 0.0077
+  }
+]

@@ -22,8 +22,12 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.data_loader import get_upcoming_fixtures
-from src.features import FEATURE_COLUMNS, compute_features
+from src.data_loader import get_current_injuries, get_player_stats, get_upcoming_fixtures
+from src.features import (
+    FEATURE_COLUMNS,
+    calculate_injury_impact,
+    compute_features,
+)
 from src.models import _normalize_probabilities
 
 FEATURES_PATH = PROJECT_ROOT / "data" / "processed" / "features.parquet"
@@ -40,6 +44,11 @@ FEATURE_LABELS = {
     "elo_diff": "Elo Rating Differential (Home - Away)",
     "home_elo": "Home Team Elo Rating",
     "away_elo": "Away Team Elo Rating",
+    "Delta_Injury_Impact": "Injury Impact Differential (Away Missing - Home Missing)",
+    "Home_Injury_Ratio": "Home Team Injury Ratio (% Missing Minutes)",
+    "Away_Injury_Ratio": "Away Team Injury Ratio (% Missing Minutes)",
+    "Venue_Specific_Form_5": "Venue-Specific Form Differential (Last 5)",
+    "Opponent_Adjusted_Form_5": "Opponent-Adjusted Form Differential (Last 5)",
     "Delta_Points_Roll_5": "5-Match Form Points Differential",
     "Delta_Points_Roll_10": "10-Match Form Points Differential",
     "Delta_Points_EWMA_5": "5-Match EWMA Points Differential",
@@ -106,6 +115,106 @@ def load_calibrated_model() -> Any:
 def load_upcoming_fixtures() -> pd.DataFrame:
     """Fetch or load upcoming Premier League gameweek fixtures."""
     return get_upcoming_fixtures()
+
+
+@st.cache_data
+def load_current_injuries() -> pd.DataFrame:
+    """Load or scrape current Premier League player injuries."""
+    return get_current_injuries()
+
+
+@st.cache_data
+def load_player_stats() -> pd.DataFrame:
+    """Load player squad statistics."""
+    return get_player_stats()
+
+
+def render_team_news_expander(
+    home_team: str,
+    away_team: str,
+    injuries_df: pd.DataFrame,
+    player_stats_df: pd.DataFrame,
+    default_expanded: bool = False,
+) -> None:
+    """Render an interactive expander displaying current out and doubtful players for both teams."""
+    h_impact = calculate_injury_impact(home_team, injuries_df=injuries_df, player_stats_df=player_stats_df)
+    a_impact = calculate_injury_impact(away_team, injuries_df=injuries_df, player_stats_df=player_stats_df)
+
+    h_inj = h_impact["Injured_Players"]
+    a_inj = a_impact["Injured_Players"]
+
+    total_sidelined = len(h_inj) + len(a_inj)
+    expander_title = f"🚨 Team News & Sidelined Players ({total_sidelined} reported)"
+
+    with st.expander(expander_title, expanded=default_expanded):
+        c_home, c_away = st.columns(2)
+        with c_home:
+            st.markdown(
+                f"**🏟️ {home_team}** &bull; Missing Mins: `{h_impact['Injury_Impact_Score']}%` | Key Starters Out: `{h_impact['Missing_Key_Player_Count']}`"
+            )
+            if h_inj:
+                for p in h_inj:
+                    status_color = "#ef4444" if p["Status"] == "Out" else "#f59e0b"
+                    status_text_color = "#ffffff" if p["Status"] == "Out" else "#000000"
+                    status_badge = (
+                        f'<span style="background:{status_color};color:{status_text_color};padding:2px 7px;'
+                        f'border-radius:4px;font-size:0.72rem;font-weight:700;">{p["Status"].upper()}</span>'
+                    )
+                    key_badge = (
+                        ' <span style="background:#3b82f6;color:#ffffff;padding:1px 5px;'
+                        'border-radius:3px;font-size:0.68rem;font-weight:600;">KEY STARTER</span>'
+                        if p.get("IsKeyPlayer")
+                        else ""
+                    )
+                    st.markdown(
+                        f"""
+                        <div style="background:rgba(15,23,42,0.65);border-left:3px solid {status_color};padding:7px 12px;border-radius:6px;margin-bottom:6px;">
+                            <div style="font-size:0.86rem;font-weight:700;color:#f8fafc;">
+                                {p['Player']} {status_badge}{key_badge}
+                            </div>
+                            <div style="font-size:0.76rem;color:#94a3b8;margin-top:2px;">
+                                {p['Position']} &bull; {p['Reason']} &bull; Return: {p['ExpectedReturn']}
+                            </div>
+                        </div>
+                        """,
+                        unsafe_allow_html=True,
+                    )
+            else:
+                st.markdown('<span style="color:#10b981;font-size:0.82rem;">✅ No confirmed injuries or doubts</span>', unsafe_allow_html=True)
+
+        with c_away:
+            st.markdown(
+                f"**✈️ {away_team}** &bull; Missing Mins: `{a_impact['Injury_Impact_Score']}%` | Key Starters Out: `{a_impact['Missing_Key_Player_Count']}`"
+            )
+            if a_inj:
+                for p in a_inj:
+                    status_color = "#ef4444" if p["Status"] == "Out" else "#f59e0b"
+                    status_text_color = "#ffffff" if p["Status"] == "Out" else "#000000"
+                    status_badge = (
+                        f'<span style="background:{status_color};color:{status_text_color};padding:2px 7px;'
+                        f'border-radius:4px;font-size:0.72rem;font-weight:700;">{p["Status"].upper()}</span>'
+                    )
+                    key_badge = (
+                        ' <span style="background:#3b82f6;color:#ffffff;padding:1px 5px;'
+                        'border-radius:3px;font-size:0.68rem;font-weight:600;">KEY STARTER</span>'
+                        if p.get("IsKeyPlayer")
+                        else ""
+                    )
+                    st.markdown(
+                        f"""
+                        <div style="background:rgba(15,23,42,0.65);border-left:3px solid {status_color};padding:7px 12px;border-radius:6px;margin-bottom:6px;">
+                            <div style="font-size:0.86rem;font-weight:700;color:#f8fafc;">
+                                {p['Player']} {status_badge}{key_badge}
+                            </div>
+                            <div style="font-size:0.76rem;color:#94a3b8;margin-top:2px;">
+                                {p['Position']} &bull; {p['Reason']} &bull; Return: {p['ExpectedReturn']}
+                            </div>
+                        </div>
+                        """,
+                        unsafe_allow_html=True,
+                    )
+            else:
+                st.markdown('<span style="color:#10b981;font-size:0.82rem;">✅ No confirmed injuries or doubts</span>', unsafe_allow_html=True)
 
 
 @st.cache_data
@@ -277,6 +386,8 @@ def main() -> None:
     df = load_historical_data()
     model = load_calibrated_model()
     clubs = get_current_pl_clubs(df)
+    injuries_df = load_current_injuries()
+    player_stats_df = load_player_stats()
 
     # Support URL query params or default to Arsenal vs. Chelsea
     query_params = st.query_params
@@ -390,11 +501,18 @@ def main() -> None:
                     is_favored=(favored_class == 0),
                 )
 
-                st.subheader("📋 Latest Pre-Match Rolling & Elo Snapshot")
+                st.subheader("📋 Latest Pre-Match Rolling, Elo & Injury Snapshot")
+                h_inj_pct = feature_row.get("Home_Injury_Ratio", 0.0) * 100.0
+                a_inj_pct = feature_row.get("Away_Injury_Ratio", 0.0) * 100.0
+                delta_inj = feature_row.get("Delta_Injury_Impact", 0.0) * 100.0
+
                 snapshot_df = pd.DataFrame({
                     "Metric": [
                         "Pre-Match Elo Rating",
-                        "Points / Game (Last 5)",
+                        "Overall Points / Game (Last 5)",
+                        "Opponent-Adjusted Form (Last 5)",
+                        "Venue-Specific Form (Last 5)",
+                        "Injury Impact Score (% Missing Minutes)",
                         "Goals Scored / Game (Last 5)",
                         "Goals Conceded / Game (Last 5)",
                         "Shots on Target / Game (Last 5)",
@@ -403,6 +521,9 @@ def main() -> None:
                     f"{home_team} (Home)": [
                         f"{feature_row['home_elo']:.1f}",
                         f"{feature_row['home_pts_roll_5']:.2f}",
+                        f"{feature_row.get('home_opp_adj_form_5', feature_row['home_pts_roll_5']):.2f}",
+                        f"{feature_row.get('home_venue_form_5', 1.50):.2f}",
+                        f"{h_inj_pct:.1f}%",
                         f"{feature_row['home_gf_roll_5']:.2f}",
                         f"{feature_row['home_ga_roll_5']:.2f}",
                         f"{feature_row['home_sot_roll_5']:.2f}",
@@ -411,6 +532,9 @@ def main() -> None:
                     f"{away_team} (Away)": [
                         f"{feature_row['away_elo']:.1f}",
                         f"{feature_row['away_pts_roll_5']:.2f}",
+                        f"{feature_row.get('away_opp_adj_form_5', feature_row['away_pts_roll_5']):.2f}",
+                        f"{feature_row.get('away_venue_form_5', 1.20):.2f}",
+                        f"{a_inj_pct:.1f}%",
                         f"{feature_row['away_gf_roll_5']:.2f}",
                         f"{feature_row['away_ga_roll_5']:.2f}",
                         f"{feature_row['away_sot_roll_5']:.2f}",
@@ -419,6 +543,9 @@ def main() -> None:
                     "Differential (H - A)": [
                         f"{feature_row['elo_diff']:+.1f}",
                         f"{feature_row['Delta_Points_Roll_5']:+.2f}",
+                        f"{feature_row.get('Opponent_Adjusted_Form_5', 0.0):+.2f}",
+                        f"{feature_row.get('Venue_Specific_Form_5', 0.0):+.2f}",
+                        f"{delta_inj:+.1f}% (Away - Home)",
                         f"{feature_row['Delta_GoalsFor_Roll_5']:+.2f}",
                         f"{feature_row['Delta_GoalsAgainst_Roll_5']:+.2f}",
                         f"{feature_row['Delta_ShotsOnTarget']:+.2f}",
@@ -426,6 +553,15 @@ def main() -> None:
                     ],
                 })
                 st.dataframe(snapshot_df, width="stretch", hide_index=True)
+
+                # Team News & Sidelined Players expander
+                render_team_news_expander(
+                    home_team=home_team,
+                    away_team=away_team,
+                    injuries_df=injuries_df,
+                    player_stats_df=player_stats_df,
+                    default_expanded=True,
+                )
 
             with right_col:
                 st.subheader(f"🧠 Top 3 SHAP Driving Features Favoring {favored_name}")
@@ -511,6 +647,11 @@ def main() -> None:
                         "elo_diff": f_row["elo_diff"],
                         "Delta_Points_Roll_5": f_row["Delta_Points_Roll_5"],
                         "Delta_xG_Proxy": f_row["Delta_xG_Proxy"],
+                        "Venue_Specific_Form_5": f_row.get("Venue_Specific_Form_5", 0.0),
+                        "Opponent_Adjusted_Form_5": f_row.get("Opponent_Adjusted_Form_5", 0.0),
+                        "Home_Injury_Ratio": f_row.get("Home_Injury_Ratio", 0.0),
+                        "Away_Injury_Ratio": f_row.get("Away_Injury_Ratio", 0.0),
+                        "Delta_Injury_Impact": f_row.get("Delta_Injury_Impact", 0.0),
                     })
                 except Exception as exc:
                     st.warning(f"Could not compute features for {h_team} vs {a_team}: {exc}")
@@ -560,6 +701,7 @@ def main() -> None:
                         "Away Win %": f"{fix['prob_away']*100:.1f}%",
                         "Model Lean": f"{fix['favored_name']} ({fix['max_prob']*100:.1f}%)",
                         "Elo Diff": f"{fix['elo_diff']:+.0f}",
+                        "Injury Diff (A - H)": f"{fix['Delta_Injury_Impact']*100:+.1f}%",
                         "Lock Status": lock_str,
                     })
                 st.dataframe(pd.DataFrame(table_rows), width="stretch", hide_index=True)
@@ -587,7 +729,7 @@ def main() -> None:
 
                             st.markdown(
                                 f"""
-                                <div style="background:{bg_color};border:1.5px solid {border_color};border-radius:12px;padding:16px;margin-bottom:14px;">
+                                <div style="background:{bg_color};border:1.5px solid {border_color};border-radius:12px;padding:16px;margin-bottom:8px;">
                                     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
                                         <span style="color:#94a3b8;font-size:0.82rem;font-weight:600;">Matchday {fix['Matchday']} &bull; {fix['Date']}</span>
                                         {lock_badge_html}
@@ -608,10 +750,20 @@ def main() -> None:
                                     <div style="font-size:0.78rem;color:#94a3b8;border-top:1px solid #334155;padding-top:6px;display:flex;justify-content:space-between;">
                                         <span>Elo: {fix['home_elo']:.0f} vs {fix['away_elo']:.0f} ({fix['elo_diff']:+.0f})</span>
                                         <span>Form Diff: {fix['Delta_Points_Roll_5']:+.2f} pts</span>
+                                        <span>Injury Diff: {fix['Delta_Injury_Impact']*100:+.1f}%</span>
                                     </div>
                                 </div>
                                 """,
                                 unsafe_allow_html=True,
+                            )
+
+                            # 🚨 Team News & Sidelined Players expander under each matchup card
+                            render_team_news_expander(
+                                home_team=fix["HomeTeam"],
+                                away_team=fix["AwayTeam"],
+                                injuries_df=injuries_df,
+                                player_stats_df=player_stats_df,
+                                default_expanded=False,
                             )
 
 

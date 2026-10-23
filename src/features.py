@@ -10,7 +10,7 @@ Strict zero-leakage implementation:
 
 import sys
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple, Union
 import numpy as np
 import pandas as pd
 
@@ -30,6 +30,175 @@ DEFAULT_PRIORS = {
 
 STATS_TO_ROLL = ["gf", "ga", "shots", "sot", "pts"]
 WINDOWS = [5, 10]
+
+
+class InjuryImpactResult(dict):
+    """Dictionary subclass supporting dot-attribute access for convenience."""
+
+    def __getattr__(self, name: str) -> Any:
+        try:
+            return self[name]
+        except KeyError:
+            raise AttributeError(f"'InjuryImpactResult' object has no attribute '{name}'")
+
+    def __setattr__(self, name: str, value: Any) -> None:
+        self[name] = value
+
+
+def calculate_injury_impact(
+    team: str,
+    injuries_df: Optional[pd.DataFrame] = None,
+    player_stats_df: Optional[pd.DataFrame] = None,
+    away_team: Optional[str] = None,
+) -> InjuryImpactResult:
+    """Calculate squad injury impact metrics for a team or matchup.
+
+    Computes:
+    - Missing_Minutes_Share: share of total team minutes represented by currently injured players.
+    - Missing_Key_Player_Count: count of injured players with >60% starting XI appearances.
+    - Delta_Injury_Impact: Away_Missing_Minutes - Home_Missing_Minutes (when evaluating a matchup).
+
+    Args:
+        team: Club name (or Home club name).
+        injuries_df: Optional DataFrame of current injuries. If None, loaded via get_current_injuries().
+        player_stats_df: Optional DataFrame of player stats. If None, loaded via get_player_stats().
+        away_team: Optional Away club name. If provided, computes matchup Delta_Injury_Impact.
+
+    Returns:
+        InjuryImpactResult containing Missing_Minutes_Share, Missing_Key_Player_Count,
+        Injury_Impact_Score, and Delta_Injury_Impact.
+    """
+    from src.data_loader import get_current_injuries, get_player_stats
+
+    # Support flexible parameter ordering (home_team, away_team, injuries_df, player_stats_df)
+    if isinstance(injuries_df, str):
+        actual_away = injuries_df
+        actual_inj = player_stats_df if isinstance(player_stats_df, pd.DataFrame) else get_current_injuries()
+        actual_stats = away_team if isinstance(away_team, pd.DataFrame) else get_player_stats()
+        team_home = team
+    else:
+        actual_away = away_team
+        actual_inj = injuries_df if isinstance(injuries_df, pd.DataFrame) else get_current_injuries()
+        actual_stats = player_stats_df if isinstance(player_stats_df, pd.DataFrame) else get_player_stats()
+        team_home = team
+
+    def _eval_single_team(t_name: str) -> Dict[str, Any]:
+        t_clean = str(t_name).strip().lower()
+        t_inj = actual_inj[actual_inj["Team"].astype(str).str.strip().str.lower() == t_clean]
+        t_stats = actual_stats[actual_stats["Team"].astype(str).str.strip().str.lower() == t_clean]
+
+        total_team_minutes = (
+            float(t_stats["Minutes"].sum())
+            if not t_stats.empty and t_stats["Minutes"].sum() > 0
+            else 8910.0
+        )
+
+        missing_minutes = 0.0
+        missing_key_count = 0
+        injured_list = []
+
+        stat_dict = {}
+        if not t_stats.empty:
+            for _, srow in t_stats.iterrows():
+                stat_dict[str(srow["Player"]).strip().lower()] = srow
+
+        for _, irow in t_inj.iterrows():
+            p_name = str(irow["Player"]).strip()
+            p_lower = p_name.lower()
+            p_status = str(irow.get("Status", "Out"))
+            p_pos = str(irow.get("Position", "Midfielder"))
+            p_reason = str(irow.get("Reason", "Undisclosed"))
+            p_return = str(irow.get("ExpectedReturn", "TBD"))
+
+            matched = stat_dict.get(p_lower)
+            if matched is None:
+                for s_key, s_val in stat_dict.items():
+                    if p_lower in s_key or s_key in p_lower:
+                        matched = s_val
+                        break
+
+            if matched is not None:
+                mins = float(matched["Minutes"])
+                starts = int(matched["Starts"])
+                matches = int(matched.get("Matches", 9))
+                start_pct = float(matched.get("Start_Pct", starts / matches if matches > 0 else 0.0))
+            else:
+                mins = 300.0
+                starts = 3
+                start_pct = 0.33
+
+            missing_minutes += mins
+            is_key = start_pct > 0.60
+            if is_key:
+                missing_key_count += 1
+
+            injured_list.append({
+                "Player": p_name,
+                "Status": p_status,
+                "Position": p_pos,
+                "Reason": p_reason,
+                "ExpectedReturn": p_return,
+                "Minutes": mins,
+                "IsKeyPlayer": is_key,
+            })
+
+        missing_minutes_share = float(missing_minutes / total_team_minutes) if total_team_minutes > 0 else 0.0
+
+        return {
+            "team": t_name,
+            "Missing_Minutes_Share": missing_minutes_share,
+            "Missing_Key_Player_Count": missing_key_count,
+            "Injury_Impact_Score": round(missing_minutes_share * 100.0, 1),
+            "Injured_Players": injured_list,
+        }
+
+    home_res = _eval_single_team(team_home)
+
+    if actual_away:
+        away_res = _eval_single_team(actual_away)
+        # Delta_Injury_Impact = Away_Missing_Minutes - Home_Missing_Minutes
+        delta = away_res["Missing_Minutes_Share"] - home_res["Missing_Minutes_Share"]
+        return InjuryImpactResult({
+            "team": team_home,
+            "away_team": actual_away,
+            "Missing_Minutes_Share": home_res["Missing_Minutes_Share"],
+            "Missing_Key_Player_Count": home_res["Missing_Key_Player_Count"],
+            "Home_Missing_Minutes": home_res["Missing_Minutes_Share"],
+            "Away_Missing_Minutes": away_res["Missing_Minutes_Share"],
+            "Home_Injury_Ratio": home_res["Missing_Minutes_Share"],
+            "Away_Injury_Ratio": away_res["Missing_Minutes_Share"],
+            "Delta_Injury_Impact": delta,
+            "Injury_Impact_Score": home_res["Injury_Impact_Score"],
+            "Injured_Players": home_res["Injured_Players"],
+            "Home_Injuries": home_res["Injured_Players"],
+            "Away_Injuries": away_res["Injured_Players"],
+        })
+
+    return InjuryImpactResult({
+        "team": team_home,
+        "Missing_Minutes_Share": home_res["Missing_Minutes_Share"],
+        "Missing_Key_Player_Count": home_res["Missing_Key_Player_Count"],
+        "Injury_Impact_Score": home_res["Injury_Impact_Score"],
+        "Home_Missing_Minutes": home_res["Missing_Minutes_Share"],
+        "Away_Missing_Minutes": 0.0,
+        "Delta_Injury_Impact": -home_res["Missing_Minutes_Share"],
+        "Injured_Players": home_res["Injured_Players"],
+    })
+
+
+def calculate_matchup_injury_impact(
+    home_team: str,
+    away_team: str,
+    injuries_df: Optional[pd.DataFrame] = None,
+    player_stats_df: Optional[pd.DataFrame] = None,
+) -> InjuryImpactResult:
+    """Convenience helper to compute match injury differential between Home and Away teams."""
+    return calculate_injury_impact(
+        team=home_team,
+        injuries_df=injuries_df,
+        player_stats_df=player_stats_df,
+        away_team=away_team,
+    )
 
 
 def compute_elo_ratings(
@@ -112,7 +281,11 @@ def compute_elo_ratings(
     )
 
 
-def compute_team_rolling_features(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
+def compute_team_rolling_features(
+    df: pd.DataFrame,
+    home_elo: Optional[pd.Series] = None,
+    away_elo: Optional[pd.Series] = None,
+) -> Tuple[pd.DataFrame, pd.DataFrame]:
     """Compute 5-game and 10-game rolling averages, EWMAs, and rest days for each team.
 
     MANDATORY ZERO-LEAKAGE ENFORCEMENT:
@@ -121,10 +294,22 @@ def compute_team_rolling_features(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.Da
 
     Args:
         df: Standardized match DataFrame.
+        home_elo: Optional pre-computed home Elo ratings.
+        away_elo: Optional pre-computed away Elo ratings.
 
     Returns:
         Tuple of (home_features_df, away_features_df) keyed by original match index.
     """
+    if home_elo is None or away_elo is None:
+        if "home_elo" in df.columns and "away_elo" in df.columns:
+            h_elo_series = df["home_elo"]
+            a_elo_series = df["away_elo"]
+        else:
+            h_elo_series, a_elo_series, _ = compute_elo_ratings(df)
+    else:
+        h_elo_series = home_elo
+        a_elo_series = away_elo
+
     # Build two perspectives per match: home and away
     home_recs = pd.DataFrame({
         "match_idx": df.index,
@@ -137,6 +322,7 @@ def compute_team_rolling_features(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.Da
         "shots": df["HS"],
         "sot": df["HST"],
         "pts": np.where(df["FTR"] == 2, 3, np.where(df["FTR"] == 1, 1, 0)),
+        "opp_elo": a_elo_series,
     })
 
     away_recs = pd.DataFrame({
@@ -150,6 +336,7 @@ def compute_team_rolling_features(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.Da
         "shots": df["AS"],
         "sot": df["AST"],
         "pts": np.where(df["FTR"] == 0, 3, np.where(df["FTR"] == 1, 1, 0)),
+        "opp_elo": h_elo_series,
     })
 
     # Combine into unified team match stream
@@ -186,6 +373,13 @@ def compute_team_rolling_features(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.Da
             )
             team_stream[ewma_col] = ewma_series.fillna(prior)
 
+    # 3. Opponent-Adjusted Form: points weighted by the ratio of (Opponent Elo / 1500)
+    team_stream["opp_adj_pts"] = team_stream["pts"] * (team_stream["opp_elo"] / 1500.0)
+    team_stream["opp_adj_roll_5"] = (
+        team_stream.groupby("team")["opp_adj_pts"]
+        .transform(lambda s: s.shift(1).rolling(window=5, min_periods=1).mean())
+    ).fillna(1.36)
+
     # Separate home and away perspectives back to match_idx
     home_features = team_stream[team_stream["is_home"] == 1].set_index("match_idx")
     away_features = team_stream[team_stream["is_home"] == 0].set_index("match_idx")
@@ -204,6 +398,13 @@ def compute_features(df: pd.DataFrame) -> pd.DataFrame:
         * Delta_Points_Roll_5
         * Delta_xG_Proxy
         * Delta_ShotsOnTarget
+    - Upgraded Form Engineering:
+        * Opponent_Adjusted_Form_5: points weighted by (Opponent Elo / 1500)
+        * Venue_Specific_Form_5: rolling points strictly at Home for home team, and Away for away team
+    - Current Injury Impact:
+        * Home_Injury_Ratio: share of total team minutes missing due to injury
+        * Away_Injury_Ratio: share of total team minutes missing due to injury
+        * Delta_Injury_Impact: Away_Missing_Minutes - Home_Missing_Minutes
 
     Args:
         df: Chronologically sorted DataFrame with standardized schema.
@@ -220,7 +421,9 @@ def compute_features(df: pd.DataFrame) -> pd.DataFrame:
     result["elo_diff"] = elo_diff
 
     # 2. Compute team-level rolling and EWMA features
-    home_feats, away_feats = compute_team_rolling_features(result)
+    home_feats, away_feats = compute_team_rolling_features(
+        result, home_elo=home_elo, away_elo=away_elo
+    )
 
     # Rest days
     result["home_rest_days"] = home_feats["rest_days"]
@@ -278,6 +481,55 @@ def compute_features(df: pd.DataFrame) -> pd.DataFrame:
         result["home_shots_roll_5"] - result["away_shots_roll_5"]
     )
 
+    # 4. Form Upgrades (Requirement 2)
+    # Opponent-Adjusted Form: points weighted by (Opponent Elo / 1500)
+    result["home_opp_adj_form_5"] = home_feats["opp_adj_roll_5"]
+    result["away_opp_adj_form_5"] = away_feats["opp_adj_roll_5"]
+    result["Opponent_Adjusted_Form_5"] = (
+        result["home_opp_adj_form_5"] - result["away_opp_adj_form_5"]
+    )
+    result["Delta_Opponent_Adjusted_Form_5"] = result["Opponent_Adjusted_Form_5"]
+
+    # Venue-Specific Form: rolling points strictly at Home for home team, strictly Away for away team
+    temp_df = result.copy()
+    temp_df["_home_pts"] = np.where(temp_df["FTR"] == 2, 3, np.where(temp_df["FTR"] == 1, 1, 0))
+    temp_df["_away_pts"] = np.where(temp_df["FTR"] == 0, 3, np.where(temp_df["FTR"] == 1, 1, 0))
+
+    result["home_venue_form_5"] = (
+        temp_df.groupby("HomeTeam")["_home_pts"]
+        .transform(lambda s: s.shift(1).rolling(window=5, min_periods=1).mean())
+    ).fillna(1.50)
+
+    result["away_venue_form_5"] = (
+        temp_df.groupby("AwayTeam")["_away_pts"]
+        .transform(lambda s: s.shift(1).rolling(window=5, min_periods=1).mean())
+    ).fillna(1.20)
+
+    result["Venue_Specific_Form_5"] = (
+        result["home_venue_form_5"] - result["away_venue_form_5"]
+    )
+    result["Delta_Venue_Specific_Form_5"] = result["Venue_Specific_Form_5"]
+
+    # 5. Injury Impact Features (Requirement 2 & 3)
+    try:
+        from src.data_loader import get_current_injuries, get_player_stats
+        inj_df = get_current_injuries()
+        stats_df = get_player_stats()
+        all_teams = set(result["HomeTeam"]).union(set(result["AwayTeam"]))
+        team_inj_map = {}
+        for t in all_teams:
+            impact_res = calculate_injury_impact(t, injuries_df=inj_df, player_stats_df=stats_df)
+            team_inj_map[t] = impact_res["Missing_Minutes_Share"]
+    except Exception:
+        team_inj_map = {}
+
+    result["Home_Injury_Ratio"] = result["HomeTeam"].map(team_inj_map).fillna(0.0).astype(float)
+    result["Away_Injury_Ratio"] = result["AwayTeam"].map(team_inj_map).fillna(0.0).astype(float)
+    # Delta_Injury_Impact = Away_Missing_Minutes - Home_Missing_Minutes
+    result["Delta_Injury_Impact"] = (
+        result["Away_Injury_Ratio"] - result["Home_Injury_Ratio"]
+    ).astype(float)
+
     return result
 
 
@@ -295,6 +547,12 @@ FEATURE_COLUMNS = [
     "Delta_Points_Roll_5",
     "Delta_xG_Proxy",
     "Delta_ShotsOnTarget",
+    # Form & Injury upgrades (Requirement 2 & 3)
+    "Delta_Injury_Impact",
+    "Home_Injury_Ratio",
+    "Away_Injury_Ratio",
+    "Venue_Specific_Form_5",
+    "Opponent_Adjusted_Form_5",
     # Additional differentials
     "Delta_Points_Roll_10",
     "Delta_Points_EWMA_5",

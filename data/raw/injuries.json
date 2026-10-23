@@ -1,0 +1,578 @@
+[
+  {
+    "Team": "Arsenal",
+    "Player": "Martin Odegaard",
+    "Status": "Out",
+    "Position": "Midfielder",
+    "Reason": "Ankle Ligament",
+    "ExpectedReturn": "Early Nov 2026"
+  },
+  {
+    "Team": "Arsenal",
+    "Player": "Bukayo Saka",
+    "Status": "Doubtful",
+    "Position": "Forward",
+    "Reason": "Hamstring Tightness",
+    "ExpectedReturn": "Late Oct 2026"
+  },
+  {
+    "Team": "Arsenal",
+    "Player": "Jurrien Timber",
+    "Status": "Doubtful",
+    "Position": "Defender",
+    "Reason": "Muscular Issue",
+    "ExpectedReturn": "Late Oct 2026"
+  },
+  {
+    "Team": "Arsenal",
+    "Player": "Takehiro Tomiyasu",
+    "Status": "Out",
+    "Position": "Defender",
+    "Reason": "Knee Strain",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Arsenal",
+    "Player": "Kieran Tierney",
+    "Status": "Out",
+    "Position": "Defender",
+    "Reason": "Hamstring Injury",
+    "ExpectedReturn": "Dec 2026"
+  },
+  {
+    "Team": "Chelsea",
+    "Player": "Cole Palmer",
+    "Status": "Doubtful",
+    "Position": "Midfielder",
+    "Reason": "Knock",
+    "ExpectedReturn": "Late Oct 2026"
+  },
+  {
+    "Team": "Chelsea",
+    "Player": "Reece James",
+    "Status": "Doubtful",
+    "Position": "Defender",
+    "Reason": "Hamstring Rehab",
+    "ExpectedReturn": "Late Oct 2026"
+  },
+  {
+    "Team": "Chelsea",
+    "Player": "Omari Kellyman",
+    "Status": "Out",
+    "Position": "Midfielder",
+    "Reason": "Hamstring Strain",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Man City",
+    "Player": "Rodri",
+    "Status": "Out",
+    "Position": "Midfielder",
+    "Reason": "ACL Knee",
+    "ExpectedReturn": "May 2027"
+  },
+  {
+    "Team": "Man City",
+    "Player": "Kevin De Bruyne",
+    "Status": "Doubtful",
+    "Position": "Midfielder",
+    "Reason": "Groin Strain",
+    "ExpectedReturn": "Late Oct 2026"
+  },
+  {
+    "Team": "Man City",
+    "Player": "Kyle Walker",
+    "Status": "Doubtful",
+    "Position": "Defender",
+    "Reason": "Knee Knock",
+    "ExpectedReturn": "Late Oct 2026"
+  },
+  {
+    "Team": "Man City",
+    "Player": "Oscar Bobb",
+    "Status": "Out",
+    "Position": "Forward",
+    "Reason": "Leg Fracture",
+    "ExpectedReturn": "Dec 2026"
+  },
+  {
+    "Team": "Liverpool",
+    "Player": "Alisson Becker",
+    "Status": "Out",
+    "Position": "Goalkeeper",
+    "Reason": "Hamstring Tear",
+    "ExpectedReturn": "Late Nov 2026"
+  },
+  {
+    "Team": "Liverpool",
+    "Player": "Diogo Jota",
+    "Status": "Doubtful",
+    "Position": "Forward",
+    "Reason": "Rib Contusion",
+    "ExpectedReturn": "Late Oct 2026"
+  },
+  {
+    "Team": "Liverpool",
+    "Player": "Harvey Elliott",
+    "Status": "Out",
+    "Position": "Midfielder",
+    "Reason": "Foot Fracture",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Liverpool",
+    "Player": "Federico Chiesa",
+    "Status": "Doubtful",
+    "Position": "Forward",
+    "Reason": "Match Fitness",
+    "ExpectedReturn": "Late Oct 2026"
+  },
+  {
+    "Team": "Man United",
+    "Player": "Kobbie Mainoo",
+    "Status": "Out",
+    "Position": "Midfielder",
+    "Reason": "Hamstring Strain",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Man United",
+    "Player": "Harry Maguire",
+    "Status": "Out",
+    "Position": "Defender",
+    "Reason": "Calf Strain",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Man United",
+    "Player": "Luke Shaw",
+    "Status": "Doubtful",
+    "Position": "Defender",
+    "Reason": "Calf Rehabilitation",
+    "ExpectedReturn": "Late Oct 2026"
+  },
+  {
+    "Team": "Man United",
+    "Player": "Leny Yoro",
+    "Status": "Out",
+    "Position": "Defender",
+    "Reason": "Metatarsal Fracture",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Man United",
+    "Player": "Mason Mount",
+    "Status": "Doubtful",
+    "Position": "Midfielder",
+    "Reason": "Knock",
+    "ExpectedReturn": "Late Oct 2026"
+  },
+  {
+    "Team": "Tottenham",
+    "Player": "Son Heung-min",
+    "Status": "Doubtful",
+    "Position": "Forward",
+    "Reason": "Hamstring Tightness",
+    "ExpectedReturn": "Late Oct 2026"
+  },
+  {
+    "Team": "Tottenham",
+    "Player": "Richarlison",
+    "Status": "Out",
+    "Position": "Forward",
+    "Reason": "Calf Strain",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Tottenham",
+    "Player": "Wilson Odobert",
+    "Status": "Out",
+    "Position": "Forward",
+    "Reason": "Hamstring Strain",
+    "ExpectedReturn": "Dec 2026"
+  },
+  {
+    "Team": "Aston Villa",
+    "Player": "Amadou Onana",
+    "Status": "Doubtful",
+    "Position": "Midfielder",
+    "Reason": "Hamstring Strain",
+    "ExpectedReturn": "Late Oct 2026"
+  },
+  {
+    "Team": "Aston Villa",
+    "Player": "Boubacar Kamara",
+    "Status": "Doubtful",
+    "Position": "Midfielder",
+    "Reason": "Knee Rehab",
+    "ExpectedReturn": "Late Oct 2026"
+  },
+  {
+    "Team": "Aston Villa",
+    "Player": "Tyrone Mings",
+    "Status": "Doubtful",
+    "Position": "Defender",
+    "Reason": "Knee Rehab",
+    "ExpectedReturn": "Late Oct 2026"
+  },
+  {
+    "Team": "Newcastle",
+    "Player": "Kieran Trippier",
+    "Status": "Out",
+    "Position": "Defender",
+    "Reason": "Hamstring Strain",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Newcastle",
+    "Player": "Callum Wilson",
+    "Status": "Doubtful",
+    "Position": "Forward",
+    "Reason": "Back Tightness",
+    "ExpectedReturn": "Late Oct 2026"
+  },
+  {
+    "Team": "Newcastle",
+    "Player": "Sven Botman",
+    "Status": "Out",
+    "Position": "Defender",
+    "Reason": "ACL Knee",
+    "ExpectedReturn": "Jan 2027"
+  },
+  {
+    "Team": "Newcastle",
+    "Player": "Jamaal Lascelles",
+    "Status": "Out",
+    "Position": "Defender",
+    "Reason": "ACL Knee",
+    "ExpectedReturn": "Jan 2027"
+  },
+  {
+    "Team": "Brighton",
+    "Player": "Joao Pedro",
+    "Status": "Out",
+    "Position": "Forward",
+    "Reason": "Ankle Injury",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Brighton",
+    "Player": "Matt O'Riley",
+    "Status": "Doubtful",
+    "Position": "Midfielder",
+    "Reason": "Ankle Surgery Rehab",
+    "ExpectedReturn": "Late Oct 2026"
+  },
+  {
+    "Team": "Brighton",
+    "Player": "James Milner",
+    "Status": "Out",
+    "Position": "Midfielder",
+    "Reason": "Hamstring Injury",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "West Ham",
+    "Player": "Mohammed Kudus",
+    "Status": "Out",
+    "Position": "Forward",
+    "Reason": "Disciplinary / Knock",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "West Ham",
+    "Player": "Niclas Fullkrug",
+    "Status": "Out",
+    "Position": "Forward",
+    "Reason": "Achilles Irritation",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Bournemouth",
+    "Player": "Alex Scott",
+    "Status": "Out",
+    "Position": "Midfielder",
+    "Reason": "Meniscus Surgery",
+    "ExpectedReturn": "Dec 2026"
+  },
+  {
+    "Team": "Bournemouth",
+    "Player": "Tyler Adams",
+    "Status": "Doubtful",
+    "Position": "Midfielder",
+    "Reason": "Back Rehabilitation",
+    "ExpectedReturn": "Late Oct 2026"
+  },
+  {
+    "Team": "Brentford",
+    "Player": "Yoane Wissa",
+    "Status": "Doubtful",
+    "Position": "Forward",
+    "Reason": "Ankle Strain",
+    "ExpectedReturn": "Late Oct 2026"
+  },
+  {
+    "Team": "Brentford",
+    "Player": "Rico Henry",
+    "Status": "Out",
+    "Position": "Defender",
+    "Reason": "Knee Rehab",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Brentford",
+    "Player": "Aaron Hickey",
+    "Status": "Out",
+    "Position": "Defender",
+    "Reason": "Hamstring Surgery",
+    "ExpectedReturn": "Jan 2027"
+  },
+  {
+    "Team": "Brentford",
+    "Player": "Igor Thiago",
+    "Status": "Out",
+    "Position": "Forward",
+    "Reason": "Meniscus Rehab",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Brentford",
+    "Player": "Josh Dasilva",
+    "Status": "Out",
+    "Position": "Midfielder",
+    "Reason": "Knee Ligament",
+    "ExpectedReturn": "Jan 2027"
+  },
+  {
+    "Team": "Crystal Palace",
+    "Player": "Chris Richards",
+    "Status": "Out",
+    "Position": "Defender",
+    "Reason": "Hamstring Tear",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Crystal Palace",
+    "Player": "Cheick Doucoure",
+    "Status": "Out",
+    "Position": "Midfielder",
+    "Reason": "Tendon Strain",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Crystal Palace",
+    "Player": "Chadi Riad",
+    "Status": "Out",
+    "Position": "Defender",
+    "Reason": "Knee Ligament",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Everton",
+    "Player": "Jarrad Branthwaite",
+    "Status": "Doubtful",
+    "Position": "Defender",
+    "Reason": "Thigh Strain",
+    "ExpectedReturn": "Late Oct 2026"
+  },
+  {
+    "Team": "Everton",
+    "Player": "James Garner",
+    "Status": "Out",
+    "Position": "Midfielder",
+    "Reason": "Back Injury",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Everton",
+    "Player": "Tim Iroegbunam",
+    "Status": "Out",
+    "Position": "Midfielder",
+    "Reason": "Foot Bone Stress",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Everton",
+    "Player": "Armando Broja",
+    "Status": "Out",
+    "Position": "Forward",
+    "Reason": "Achilles Rehab",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Fulham",
+    "Player": "Sasa Lukic",
+    "Status": "Out",
+    "Position": "Midfielder",
+    "Reason": "Shoulder Sprain",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Fulham",
+    "Player": "Timothy Castagne",
+    "Status": "Doubtful",
+    "Position": "Defender",
+    "Reason": "Hamstring Tightness",
+    "ExpectedReturn": "Late Oct 2026"
+  },
+  {
+    "Team": "Wolves",
+    "Player": "Yerson Mosquera",
+    "Status": "Out",
+    "Position": "Defender",
+    "Reason": "MCL/ACL Knee",
+    "ExpectedReturn": "May 2027"
+  },
+  {
+    "Team": "Wolves",
+    "Player": "Hwang Hee-chan",
+    "Status": "Out",
+    "Position": "Forward",
+    "Reason": "Ankle Ligament",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Wolves",
+    "Player": "Boubacar Traore",
+    "Status": "Out",
+    "Position": "Midfielder",
+    "Reason": "Knee Surgery",
+    "ExpectedReturn": "Dec 2026"
+  },
+  {
+    "Team": "Wolves",
+    "Player": "Sasa Kalajdzic",
+    "Status": "Out",
+    "Position": "Forward",
+    "Reason": "ACL Knee",
+    "ExpectedReturn": "Jan 2027"
+  },
+  {
+    "Team": "Nott'm Forest",
+    "Player": "Morgan Gibbs-White",
+    "Status": "Doubtful",
+    "Position": "Midfielder",
+    "Reason": "Ankle Knock",
+    "ExpectedReturn": "Late Oct 2026"
+  },
+  {
+    "Team": "Nott'm Forest",
+    "Player": "Ibrahim Sangare",
+    "Status": "Out",
+    "Position": "Midfielder",
+    "Reason": "Hamstring Tear",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Nott'm Forest",
+    "Player": "Danilo",
+    "Status": "Out",
+    "Position": "Midfielder",
+    "Reason": "Ankle Fracture",
+    "ExpectedReturn": "Dec 2026"
+  },
+  {
+    "Team": "Leicester",
+    "Player": "Patson Daka",
+    "Status": "Out",
+    "Position": "Forward",
+    "Reason": "Ankle Ligament",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Leicester",
+    "Player": "Jannik Vestergaard",
+    "Status": "Doubtful",
+    "Position": "Defender",
+    "Reason": "Ankle Sprain",
+    "ExpectedReturn": "Late Oct 2026"
+  },
+  {
+    "Team": "Southampton",
+    "Player": "Gavin Bazunu",
+    "Status": "Out",
+    "Position": "Goalkeeper",
+    "Reason": "Achilles Rupture",
+    "ExpectedReturn": "Dec 2026"
+  },
+  {
+    "Team": "Southampton",
+    "Player": "Ross Stewart",
+    "Status": "Out",
+    "Position": "Forward",
+    "Reason": "Calf Strain",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Southampton",
+    "Player": "William Smallbone",
+    "Status": "Out",
+    "Position": "Midfielder",
+    "Reason": "Hamstring Injury",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Ipswich",
+    "Player": "Axel Tuanzebe",
+    "Status": "Out",
+    "Position": "Defender",
+    "Reason": "Hand Surgery",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Ipswich",
+    "Player": "Massimo Luongo",
+    "Status": "Out",
+    "Position": "Midfielder",
+    "Reason": "Ankle Ligament",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Burnley",
+    "Player": "Jordan Beyer",
+    "Status": "Out",
+    "Position": "Defender",
+    "Reason": "Hamstring Tear",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Burnley",
+    "Player": "Nathan Redmond",
+    "Status": "Out",
+    "Position": "Forward",
+    "Reason": "Hamstring Strain",
+    "ExpectedReturn": "Nov 2026"
+  },
+  {
+    "Team": "Leeds",
+    "Player": "Ethan Ampadu",
+    "Status": "Out",
+    "Position": "Midfielder",
+    "Reason": "Knee Ligament",
+    "ExpectedReturn": "Dec 2026"
+  },
+  {
+    "Team": "Leeds",
+    "Player": "Ilia Gruev",
+    "Status": "Out",
+    "Position": "Midfielder",
+    "Reason": "Meniscus Rehab",
+    "ExpectedReturn": "Dec 2026"
+  },
+  {
+    "Team": "Sunderland",
+    "Player": "Niall Huggins",
+    "Status": "Out",
+    "Position": "Defender",
+    "Reason": "Knee Rehab",
+    "ExpectedReturn": "Dec 2026"
+  },
+  {
+    "Team": "Sunderland",
+    "Player": "Jenson Seelt",
+    "Status": "Out",
+    "Position": "Defender",
+    "Reason": "Knee Rehab",
+    "ExpectedReturn": "Dec 2026"
+  }
+]

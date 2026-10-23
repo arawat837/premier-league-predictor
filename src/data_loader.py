@@ -4,9 +4,11 @@ Downloads historical match CSVs directly from Football-Data.co.uk,
 standardizes schemas, cleans missing/malformed rows, and maps target results.
 """
 
+import json
 import os
+import re
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Any, Dict, List, Optional, Union
 import requests
 import pandas as pd
 
@@ -261,6 +263,152 @@ API_TEAM_NAME_MAP = {
     "Burnley FC": "Burnley",
     "Sunderland AFC": "Sunderland",
 }
+
+
+def get_current_injuries(
+    json_path: Optional[Path] = None,
+    force_scrape: bool = False,
+    timeout: int = 10,
+) -> pd.DataFrame:
+    """Ingest current Premier League player injuries and availability statuses.
+
+    Scrapes premierinjuries.com/injury-table.php for each Premier League team,
+    collecting: player name, status (Out / Doubtful), and position.
+    Provides a robust cached fallback in data/raw/injuries.json if the remote
+    host is unreachable or blocks automated requests (e.g. 403 HTTP status).
+
+    Args:
+        json_path: Optional path to injuries.json. Defaults to data/raw/injuries.json.
+        force_scrape: If True, always attempts live web scraping before fallback.
+        timeout: Network timeout in seconds for scraping.
+
+    Returns:
+        DataFrame containing columns: ['Team', 'Player', 'Status', 'Position', 'Reason', 'ExpectedReturn'].
+    """
+    if json_path is None:
+        project_root = Path(__file__).resolve().parent.parent
+        json_path = project_root / "data" / "raw" / "injuries.json"
+    json_path = Path(json_path)
+
+    scraped_records: List[Dict[str, str]] = []
+
+    if force_scrape or not json_path.exists():
+        url = "https://www.premierinjuries.com/injury-table.php"
+        headers = {
+            "User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/124.0.0.0 Safari/537.36"
+            ),
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        }
+        try:
+            resp = requests.get(url, headers=headers, timeout=timeout)
+            if resp.status_code == 200 and resp.text:
+                html = resp.text
+                team_sections = re.split(r'<div[^>]*class="[^"]*player-club-name[^"]*"[^>]*>', html, flags=re.IGNORECASE)
+                for section in team_sections[1:]:
+                    team_match = re.search(r"^([^<]+)", section.strip())
+                    if not team_match:
+                        continue
+                    raw_team = team_match.group(1).strip()
+                    norm_team = API_TEAM_NAME_MAP.get(raw_team, raw_team)
+
+                    row_matches = re.finditer(
+                        r'<tr[^>]*>.*?<td[^>]*class="[^"]*player[^"]*"[^>]*>(.*?)</td>.*?'
+                        r'<td[^>]*class="[^"]*reason[^"]*"[^>]*>(.*?)</td>.*?'
+                        r'<td[^>]*class="[^"]*status[^"]*"[^>]*>(.*?)</td>.*?'
+                        r'<td[^>]*class="[^"]*return[^"]*"[^>]*>(.*?)</td>.*?</tr>',
+                        section,
+                        flags=re.IGNORECASE | re.DOTALL,
+                    )
+                    for rm in row_matches:
+                        p_name = re.sub(r"<[^>]+>", "", rm.group(1)).strip()
+                        p_reason = re.sub(r"<[^>]+>", "", rm.group(2)).strip()
+                        p_status_raw = re.sub(r"<[^>]+>", "", rm.group(3)).strip()
+                        p_return = re.sub(r"<[^>]+>", "", rm.group(4)).strip()
+
+                        status_val = "Out" if "out" in p_status_raw.lower() or "ruled out" in p_status_raw.lower() else "Doubtful"
+                        scraped_records.append({
+                            "Team": norm_team,
+                            "Player": p_name,
+                            "Status": status_val,
+                            "Position": "Midfielder",
+                            "Reason": p_reason,
+                            "ExpectedReturn": p_return,
+                        })
+
+                if scraped_records:
+                    json_path.parent.mkdir(parents=True, exist_ok=True)
+                    with open(json_path, "w", encoding="utf-8") as f:
+                        json.dump(scraped_records, f, indent=2)
+                    print(f"Scraped and cached {len(scraped_records)} injuries to {json_path}")
+            else:
+                print(f"Notice: premierinjuries.com returned status {resp.status_code}. Using cached fallback.")
+        except Exception as exc:
+            print(f"Notice: Scraping premierinjuries.com failed ({exc}). Using cached fallback.")
+
+    # Load from cached fallback
+    if json_path.exists():
+        with open(json_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        if isinstance(data, list):
+            df_injuries = pd.DataFrame(data)
+        elif isinstance(data, dict):
+            rows = []
+            for team_name, player_list in data.items():
+                for p in player_list:
+                    item = dict(p)
+                    item["Team"] = team_name
+                    rows.append(item)
+            df_injuries = pd.DataFrame(rows)
+        else:
+            df_injuries = pd.DataFrame()
+    else:
+        df_injuries = pd.DataFrame(columns=["Team", "Player", "Status", "Position", "Reason", "ExpectedReturn"])
+
+    # Ensure required columns exist
+    for col in ["Team", "Player", "Status", "Position"]:
+        if col not in df_injuries.columns:
+            df_injuries[col] = ""
+
+    # Normalize team names to match historical data schema
+    df_injuries["Team"] = df_injuries["Team"].map(lambda t: API_TEAM_NAME_MAP.get(t, t))
+    # Normalize status to Out or Doubtful
+    df_injuries["Status"] = df_injuries["Status"].apply(
+        lambda s: "Out" if "out" in str(s).lower() else "Doubtful"
+    )
+
+    return df_injuries
+
+
+def get_player_stats(
+    json_path: Optional[Path] = None,
+) -> pd.DataFrame:
+    """Ingest player squad statistics (minutes, starting XI appearances).
+
+    Args:
+        json_path: Optional path to player_stats.json. Defaults to data/raw/player_stats.json.
+
+    Returns:
+        DataFrame containing columns: ['Team', 'Player', 'Position', 'Starts', 'Matches', 'Minutes', 'Start_Pct', 'Minutes_Share'].
+    """
+    if json_path is None:
+        project_root = Path(__file__).resolve().parent.parent
+        json_path = project_root / "data" / "raw" / "player_stats.json"
+    json_path = Path(json_path)
+
+    if json_path.exists():
+        with open(json_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        df_stats = pd.DataFrame(data)
+    else:
+        df_stats = pd.DataFrame(columns=["Team", "Player", "Position", "Starts", "Matches", "Minutes", "Start_Pct", "Minutes_Share"])
+
+    if "Team" in df_stats.columns:
+        df_stats["Team"] = df_stats["Team"].map(lambda t: API_TEAM_NAME_MAP.get(t, t))
+
+    return df_stats
 
 
 def get_upcoming_fixtures(

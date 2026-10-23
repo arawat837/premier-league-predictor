@@ -1,0 +1,43 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Operating System files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.tmp
+
+# Data files (raw downloaded seasons are excluded to keep repo lightweight)
+data/raw/*.csv
+!data/raw/upcoming_fixtures.csv
+!data/raw/.gitkeep
+data/processed/*.parquet
+!data/processed/.gitkeep
+
+# Large serialized model weights
+models/*.joblib
+models/*.pkl
+!models/.gitkeep
+
+# Streamlit runtime state
+.streamlit/secrets.toml

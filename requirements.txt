@@ -1,0 +1,11 @@
+pandas
+numpy
+scipy
+scikit-learn
+xgboost
+lightgbm
+optuna
+shap
+streamlit
+pytest
+requests

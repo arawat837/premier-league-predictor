@@ -101,10 +101,11 @@ def evaluate_high_conviction(
 
 def format_confusion_matrix_text(cm: np.ndarray, title: str = "Confusion Matrix") -> str:
     """Format a 3x3 confusion matrix as a clean ASCII table for console display."""
+    header_label = "Actual / Predicted"
     lines = [
         f"\n{title}",
         "-" * 62,
-        f"{'Actual \\ Predicted':<20} | {'Away (0)':>10} | {'Draw (1)':>10} | {'Home (2)':>10} | {'Total':>6}",
+        f"{header_label:<20} | {'Away (0)':>10} | {'Draw (1)':>10} | {'Home (2)':>10} | {'Total':>6}",
         "-" * 62,
     ]
     for i, label in enumerate(SHORT_LABELS):

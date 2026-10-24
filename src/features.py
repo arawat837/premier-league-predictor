@@ -68,7 +68,10 @@ def calculate_injury_impact(
         InjuryImpactResult containing Missing_Minutes_Share, Missing_Key_Player_Count,
         Injury_Impact_Score, and Delta_Injury_Impact.
     """
-    from src.data_loader import get_current_injuries, get_player_stats
+    try:
+        from src.data_loader import get_current_injuries, get_player_stats
+    except (ImportError, ModuleNotFoundError):
+        from data_loader import get_current_injuries, get_player_stats
 
     # Support flexible parameter ordering (home_team, away_team, injuries_df, player_stats_df)
     if isinstance(injuries_df, str):
@@ -512,7 +515,10 @@ def compute_features(df: pd.DataFrame) -> pd.DataFrame:
 
     # 5. Injury Impact Features (Requirement 2 & 3)
     try:
-        from src.data_loader import get_current_injuries, get_player_stats
+        try:
+            from src.data_loader import get_current_injuries, get_player_stats
+        except (ImportError, ModuleNotFoundError):
+            from data_loader import get_current_injuries, get_player_stats
         inj_df = get_current_injuries()
         stats_df = get_player_stats()
         all_teams = set(result["HomeTeam"]).union(set(result["AwayTeam"]))
@@ -585,7 +591,10 @@ def build_and_save_features(
     Returns:
         Processed DataFrame with engineered features.
     """
-    from src.data_loader import get_data
+    try:
+        from src.data_loader import get_data
+    except (ImportError, ModuleNotFoundError):
+        from data_loader import get_data
 
     if output_path is None:
         output_path = Path("data") / "processed" / "features.parquet"

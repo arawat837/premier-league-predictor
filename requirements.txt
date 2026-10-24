@@ -9,3 +9,5 @@ shap
 streamlit
 pytest
 requests
+pyarrow
+joblib

@@ -26,8 +26,12 @@ _project_root = str(Path(__file__).resolve().parent.parent)
 if _project_root not in sys.path:
     sys.path.insert(0, _project_root)
 
-from src.evaluate import evaluate_predictions
-from src.features import FEATURE_COLUMNS
+try:
+    from src.evaluate import evaluate_predictions
+    from src.features import FEATURE_COLUMNS
+except (ImportError, ModuleNotFoundError):
+    from evaluate import evaluate_predictions
+    from features import FEATURE_COLUMNS
 
 
 def walk_forward_expanding_splits(

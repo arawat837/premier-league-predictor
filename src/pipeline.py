@@ -7,9 +7,14 @@ _project_root = str(Path(__file__).resolve().parent.parent)
 if _project_root not in sys.path:
     sys.path.insert(0, _project_root)
 
-from src.data_loader import get_data
-from src.features import build_and_save_features
-from src.models import train_and_evaluate_all
+try:
+    from src.data_loader import get_data
+    from src.features import build_and_save_features
+    from src.models import train_and_evaluate_all
+except (ImportError, ModuleNotFoundError):
+    from data_loader import get_data
+    from features import build_and_save_features
+    from models import train_and_evaluate_all
 
 
 def run_pipeline(force_download: bool = False) -> dict:

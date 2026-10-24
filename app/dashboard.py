@@ -17,18 +17,44 @@ import pandas as pd
 import shap
 import streamlit as st
 
-# Ensure project root is on sys.path
+# Ensure project root and src are on sys.path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT))
+root_str = str(PROJECT_ROOT)
+src_str = str(PROJECT_ROOT / "src")
 
-from src.data_loader import get_current_injuries, get_player_stats, get_upcoming_fixtures
-from src.features import (
-    FEATURE_COLUMNS,
-    calculate_injury_impact,
-    compute_features,
-)
-from src.models import _normalize_probabilities
+for p in [src_str, root_str]:
+    if p in sys.path:
+        sys.path.remove(p)
+    sys.path.insert(0, p)
+
+# Evict any namespace package 'src' that lacks __file__ (e.g. /mount/src on Streamlit Cloud)
+if "src" in sys.modules and getattr(sys.modules["src"], "__file__", None) is None:
+    del sys.modules["src"]
+
+try:
+    from src.data_loader import (
+        get_current_injuries,
+        get_player_stats,
+        get_upcoming_fixtures,
+    )
+    from src.features import (
+        FEATURE_COLUMNS,
+        calculate_injury_impact,
+        compute_features,
+    )
+    from src.models import _normalize_probabilities
+except (ImportError, ModuleNotFoundError):
+    from data_loader import (
+        get_current_injuries,
+        get_player_stats,
+        get_upcoming_fixtures,
+    )
+    from features import (
+        FEATURE_COLUMNS,
+        calculate_injury_impact,
+        compute_features,
+    )
+    from models import _normalize_probabilities
 
 FEATURES_PATH = PROJECT_ROOT / "data" / "processed" / "features.parquet"
 MODEL_PATH = PROJECT_ROOT / "models" / "calibrated_xgb.joblib"

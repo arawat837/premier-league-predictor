@@ -33,9 +33,12 @@ data/raw/*.csv
 !data/raw/.gitkeep
 data/processed/*.parquet
 !data/processed/.gitkeep
+!data/processed/features.parquet
+!data/processed/oof_predictions.parquet
 
-# Large serialized model weights
+# Pre-trained model weights (calibrated XGBoost pipeline tracked for cloud deployment)
 models/*.joblib
+!models/calibrated_xgb.joblib
 models/*.pkl
 !models/.gitkeep
 
